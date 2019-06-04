@@ -82,8 +82,12 @@
     </div>
     <div class="catalog__main">
         <div class="main__container catalog__container container">
-            <h3 class="text-center">База предложений</h3>
-            <p class="text-center">Новая сделка каждые 50 минут, успейте занять свой город</p>
+            <div class="top-banner catalog__banner">
+                <span class="btn-close top-banner__close"></span>
+                <div class="top-banner__text">Станьте представителем нового <a href="#" class="top-banner__link">технологичного проекта</a></div>
+            </div>
+            <h3 class="catalog__title">База предложений</h3>
+            <p class="catalog__description">Новая сделка каждые 50 минут, успейте занять свой город</p>
             <div class="catalog__items">
                 <a href="#" class="product-item catalog__item">
                     <div class="product-item__wrap">
@@ -255,6 +259,19 @@
                     </div>
                 </a>
             </div>
+            <a class="btn btn-outline-primary catalog__btn-else" href="#">Показать ещё предложения</a>
+            <div class="paginator catalog__paginator">
+                <a class="paginator__control paginator__control_prev paginator__control_disabled" href="#"></a>
+                <div class="paginator__items">
+                    <a class="paginator__item paginator__item_active" href="#">1</a>
+                    <a class="paginator__item" href="#">2</a>
+                    <a class="paginator__item" href="#">3</a>
+                    <a class="paginator__item" href="#">4</a>
+                    <span class="paginator__item paginator__item_ellipsis">...</span>
+                    <a class="paginator__item" href="#">7</a>
+                </div>
+                <a class="paginator__control paginator__control_next" href="#"></a>
+            </div>
         </div>
         <aside class="catalog__feed d-none d-xl-block">
             <h6 class="catalog__feed_title">Что сейчас покупают</h6>
@@ -329,6 +346,7 @@
             </div>
         </footer>
     </div>
+
     <script src="dist/app.js"></script>
 </body>
 
