@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/arrow-right-white-32</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/arrow-right-white-32" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" stroke-width="2.66666667" fill="#D8D8D8" opacity="0" x="1.33333333" y="1.33333333" width="29.3333333" height="29.3333333"></rect>
+        <path d="M24.3619358,14.539823 L11.6301401,1.63716814 C10.7883685,0.787610619 9.47310033,0.787610619 8.63132871,1.63716814 C8.2104429,2.0619469 8,2.59292035 8,3.12389381 C8,3.65486726 8.2104429,4.18584071 8.63132871,4.61061947 L19.9426348,16.0265487 L8.68393944,27.3893805 C8.26305363,27.8141593 8.05261073,28.3451327 8.05261073,28.8761062 C8.05261073,29.4070796 8.26305363,29.9380531 8.68393944,30.3628319 C9.52571106,31.2123894 10.8409792,31.2123894 11.6827508,30.3628319 L24.4145465,17.5132743 C25.2037074,16.7168142 25.2037074,15.3362832 24.3619358,14.539823 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+    </g>
+</svg>

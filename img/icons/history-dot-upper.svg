@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/history-dot-upper</title>
+    <desc>Created with Sketch.</desc>
+    <g id="11-Company" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="12.0-company-1440" transform="translate(-704.000000, -1580.000000)">
+            <g id="History" transform="translate(0.000000, 1378.000000)">
+                <g id="Group-11" transform="translate(265.000000, 151.000000)">
+                    <g id="Icons/history-dot-upper" transform="translate(440.000000, 52.000000)">
+                        <circle id="Oval" stroke-opacity="0.12" stroke="#00A8FF" cx="15" cy="15" r="15"></circle>
+                        <circle id="Oval" stroke-opacity="0.12" stroke="#00A8FF" cx="15" cy="15" r="10"></circle>
+                        <circle id="Oval" fill="#00A8FF" cx="15" cy="15" r="5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Icons/Nav Bar/menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/Nav-Bar/menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#D8D8D8" opacity="0" x="0" y="0" width="42" height="42"></rect>
+        <path d="M14,15 L28,15 C28.5522847,15 29,15.4477153 29,16 C29,16.5522847 28.5522847,17 28,17 L14,17 C13.4477153,17 13,16.5522847 13,16 C13,15.4477153 13.4477153,15 14,15 Z M14,20 L28,20 C28.5522847,20 29,20.4477153 29,21 C29,21.5522847 28.5522847,22 28,22 L14,22 C13.4477153,22 13,21.5522847 13,21 C13,20.4477153 13.4477153,20 14,20 Z M14,25 L28,25 C28.5522847,25 29,25.4477153 29,26 C29,26.5522847 28.5522847,27 28,27 L14,27 C13.4477153,27 13,26.5522847 13,26 C13,25.4477153 13.4477153,25 14,25 Z" id="Combined-Shape" fill="#FFFFFF" opacity="0.818884859"></path>
+    </g>
+</svg>

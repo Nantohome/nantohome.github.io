@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/style.css">
+    <title>Bonplan 3</title>
+    <base href="../">
+</head>
+
+<body>
+    <div class="wrapper" id="app">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__bar-menu-search d-lg-none">
+                    <button class="btn btn-clean header__button header__button-menu">
+                        <i class="icon-42 icon-menu-mobile"></i>
+                    </button>
+                    <button class="btn btn-clean header__button header__button-search">
+                        <i class="icon-42 icon-search"></i>
+                    </button>
+                </div>
+                <div class="header__bar-logo">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo/white.png" srcset="img/logo/white@2x.png 2x" alt="Bonplan">
+                    </a>
+                    <div class="header__dropdowns d-none d-lg-block">
+                        <button class="btn btn-clean header__button-dropdown"><img src="img/flags/1x1/ru.svg" alt="russia" class="header__icon-flag"> <i class="icon-12 icon-arrow-down-grey"></i></button>
+                        <button class="btn btn-clean header__button-dropdown">ru <i class="icon-12 icon-arrow-down-grey"></i></button>
+                        <button class="btn btn-clean header__button-dropdown">rub <i class="icon-12 icon-arrow-down-grey"></i></button>
+                    </div>
+                </div>
+                <div class="header__bar-subscribe d-none d-lg-flex">
+                    <div class="input-group">
+                        <input type="text" class="header__subscribe-input-text form-control" placeholder="Новые бизнесы на почту" aria-label="Новые бизнесы на эл. почту"
+                            aria-describedby="header-button-subscribe">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-transparent" type="button" id="header-button-subscribe">Подписаться</button>
+                        </div>
+                    </div>
+                    <button class="header__subscribe-help btn btn-clean"><i class="icon-32 icon-question"></i></button>
+                </div>
+                <div class="header__bar-contact-profile">
+                    <div class="header__contact d-none d-lg-block">
+                        <div class="header__contact-caption">Телефон в Москве</div>
+                        <div class="header__contact-phone">8-800-775-22-33</div>
+                        <div class="header__contact-link">
+                            <a href="#" class="header__link btn btn-link-nav">Обратная связь</a>
+                        </div>
+                    </div>
+                    <div class="header__profile d-xl-none">
+                        <button class="btn btn-clean header__button header__button-avatar">
+                            <i class="icon-42 icon-avatar-empty-on-dark"></i>
+                        </button>
+                    </div>
+                    <div class="header__profile d-none d-xl-flex">
+                        <div class="header__avatar">
+                            <i class="icon-42 icon-avatar-empty-on-dark"></i>
+                        </div>
+                        <div class="header__profile-links">
+                            <div class="header__profile-link"><a href="#" class="header__link btn btn-link-nav">Войти</a></div>
+                            <div class="header__profile-link"><a href="#" class="header__link btn btn-link-nav">Зарегистрироваться</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="catalog">
+    <div class="filter catalog__filter">
+        <div class="filter__container container">
+            <div class="filter__bar-search">
+                <input class="filter__search-input-text form-control" type="text" name="" placeholder="Какой бизнес ищете?">
+            </div>
+            <div class="filter__bar-category d-none d-lg-block">Отрасль <i class="icon-arrow-down-blue-light icon-12"></i></div>
+            <div class="filter__bar-params d-none d-lg-block">Параметр показа <i class="icon-arrow-down-blue-light icon-12"></i></div>
+            <div class="filter__bar-budget d-none d-lg-block">Бюджет <i class="icon-arrow-down-blue-light icon-12"></i></div>
+        </div>
+    </div>
+    <div class="catalog__main">
+        <div class="main__container catalog__container container">
+            <div class="top-banner catalog__banner">
+                <span class="btn-close top-banner__close"></span>
+                <div class="top-banner__text">Станьте представителем нового <a href="#" class="top-banner__link">технологичного проекта</a></div>
+            </div>
+            <h3 class="catalog__title">База предложений</h3>
+            <p class="catalog__description">Новая сделка каждые 50 минут, успейте занять свой город</p>
+            <div class="catalog__items">
+                <a href="#" class="product-item catalog__item">
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <div class="product-item__img-header product-item__img-header_countdown">До конца акции 00:00:59</div>
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»</span>: спектакли-променады! «СЛУШАЯ ГОРОД»: спектакли-променады!</div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе! Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стартовый пакет</div>
+                            <div class="product-item__price product-item__price_hot">400 000 000 руб. <span class="product-item__price_old">1 000 000 000 руб.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item">
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <div class="product-item__img-header product-item__img-header_countdown">До конца акции 00:00:59</div>
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»</span></div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стоимость</div>
+                            <div class="product-item__price product-item__price_hot">400 000 руб. <span class="product-item__price_old">100 000 руб.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item catalog__item_visited">
+                    <div class="product-item__label product-item__label_visited">Просмотрено</div>
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»</span>: спектакли-променады!</div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стартовый пакет</div>
+                            <div class="product-item__price">400 000 руб.</div>
+                        </div>
+                    </div>
+                </a>
+                <div href="#" class="product-item catalog__item guarantee-card">
+                    <div class="guarantee-card__title">Все предложения проверены нашим представителем!</div>
+                    <div class="guarantee-card__btnwrap">
+                        <a class="btn btn-guarantee guarantee-card__btn" href="#">Гарантия</a>
+                        <div class="guarantee-card__description">100% передача стартового пакета</div>
+                    </div>
+                 </div>
+                <a href="#" class="product-item catalog__item">
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»: спектакли-променады!</span></div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стоимость</div>
+                            <div class="product-item__price product-item__price_hot">400 000 руб. <span class="product-item__price_old">100 000 руб.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item catalog__item_visited">
+                    <div class="product-item__label product-item__label_visited">Просмотрено</div>
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»</span>: спектакли-променады!</div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стартовый пакет</div>
+                            <div class="product-item__price">400 000 руб.</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item">
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»: спектакли-променады!</span></div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стартовый пакет</div>
+                            <div class="product-item__price product-item__price_hot">400 000 руб. <span class="product-item__price_old">100 000 руб.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item">
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <div class="product-item__img-header product-item__img-header_countdown">До конца акции 00:00:59</div>
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»</span>: спектакли-променады!</div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стоимость</div>
+                            <div class="product-item__price product-item__price_hot">400 000 руб. <span class="product-item__price_old">100 000 руб.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item catalog__item_visited">
+                    <div class="product-item__label product-item__label_visited">Просмотрено</div>
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <div class="product-item__img-header product-item__img-header_countdown">До конца акции 00:00:59</div>
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»: спектакли-променады!</span></div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стартовый пакет</div>
+                            <div class="product-item__price">400 000 руб.</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item">
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»</span>: спектакли-променады!</div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стартовый пакет</div>
+                            <div class="product-item__price product-item__price_hot">400 000 руб. <span class="product-item__price_old">100 000 руб.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item">
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»: спектакли-променады!</span></div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стоимость</div>
+                            <div class="product-item__price product-item__price_hot">400 000 руб. <span class="product-item__price_old">100 000 руб.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="product-item catalog__item catalog__item_visited">
+                    <div class="product-item__label product-item__label_visited">Просмотрено</div>
+                    <div class="product-item__wrap">
+                        <div class="product-item__imgbox">
+                            <img class="product-item__img" src="img/images/placeholder.svg" alt="">
+                            <div class="product-item__img-footer product-item__img-footer_contract">20 договоров заключено</div>
+                        </div>
+                        <div class="product-item__textbox">
+                            <div class="product-item__title">Запустите проект <span class="product-item__title_colorized">«СЛУШАЯ ГОРОД»</span>: спектакли-променады!</div>
+                            <div class="product-item__description">Новый формат развлечений: квест, экскурсия и театр в одном флаконе!</div>
+                        </div>
+                        <div class="product-item__pricebox">
+                            <div class="product-item__price-type">Стартовый пакет</div>
+                            <div class="product-item__price">400 000 руб.</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a class="btn btn-outline-primary catalog__btn-else" href="#">Показать ещё предложения</a>
+            <div class="paginator catalog__paginator">
+                <a class="paginator__control paginator__control_prev paginator__control_disabled" href="#"></a>
+                <div class="paginator__items">
+                    <a class="paginator__item paginator__item_active" href="#">1</a>
+                    <a class="paginator__item" href="#">2</a>
+                    <a class="paginator__item" href="#">3</a>
+                    <a class="paginator__item" href="#">4</a>
+                    <span class="paginator__item paginator__item_ellipsis">...</span>
+                    <a class="paginator__item" href="#">7</a>
+                </div>
+                <a class="paginator__control paginator__control_next" href="#"></a>
+            </div>
+        </div>
+        <aside class="catalog__feed d-none d-xl-block">
+            <h6 class="catalog__feed_title">Что сейчас покупают</h6>
+            <ul class="catalog__feed_list">
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">14 минут назад</div>
+                    <div class="catalog__feed_item-text"><a class="catalog__feed_item-link" href="#">Продукция «Индиго»</a> будет представлена в Астане! Заключён договор с Миргуль Нигановой.</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">2 часа назад</div>
+                    <div class="catalog__feed_item-text">Анна Прожерина стала новым представителем <a class="catalog__feed_item-link" href="#">сервиса «EnjoyHOME»</a> в Кемерово!</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">14 минут назад</div>
+                    <div class="catalog__feed_item-text"><a class="catalog__feed_item-link" href="#">Продукция «Индиго»</a> будет представлена в Астане! Заключён договор с Миргуль Нигановой.</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">2 часа назад</div>
+                    <div class="catalog__feed_item-text">Анна Прожерина стала новым представителем <a class="catalog__feed_item-link" href="#">сервиса «EnjoyHOME»</a> в Кемерово!</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">14 минут назад</div>
+                    <div class="catalog__feed_item-text"><a class="catalog__feed_item-link" href="#">Продукция «Индиго»</a> будет представлена в Астане! Заключён договор с Миргуль Нигановой.</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">2 часа назад</div>
+                    <div class="catalog__feed_item-text">Анна Прожерина стала новым представителем <a class="catalog__feed_item-link" href="#">сервиса «EnjoyHOME»</a> в Кемерово!</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">14 минут назад</div>
+                    <div class="catalog__feed_item-text"><a class="catalog__feed_item-link" href="#">Продукция «Индиго»</a> будет представлена в Астане! Заключён договор с Миргуль Нигановой.</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">2 часа назад</div>
+                    <div class="catalog__feed_item-text">Анна Прожерина стала новым представителем <a class="catalog__feed_item-link" href="#">сервиса «EnjoyHOME»</a> в Кемерово!</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">14 минут назад</div>
+                    <div class="catalog__feed_item-text"><a class="catalog__feed_item-link" href="#">Продукция «Индиго»</a> будет представлена в Астане! Заключён договор с Миргуль Нигановой.</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">2 часа назад</div>
+                    <div class="catalog__feed_item-text">Анна Прожерина стала новым представителем <a class="catalog__feed_item-link" href="#">сервиса «EnjoyHOME»</a> в Кемерово!</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">14 минут назад</div>
+                    <div class="catalog__feed_item-text"><a class="catalog__feed_item-link" href="#">Продукция «Индиго»</a> будет представлена в Астане! Заключён договор с Миргуль Нигановой.</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">2 часа назад</div>
+                    <div class="catalog__feed_item-text">Анна Прожерина стала новым представителем <a class="catalog__feed_item-link" href="#">сервиса «EnjoyHOME»</a> в Кемерово!</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">14 минут назад</div>
+                    <div class="catalog__feed_item-text"><a class="catalog__feed_item-link" href="#">Продукция «Индиго»</a> будет представлена в Астане! Заключён договор с Миргуль Нигановой.</div>
+                </li>
+                <li class="catalog__feed_item">
+                    <div class="catalog__feed_item-time">2 часа назад</div>
+                    <div class="catalog__feed_item-text">Анна Прожерина стала новым представителем <a class="catalog__feed_item-link" href="#">сервиса «EnjoyHOME»</a> в Кемерово!</div>
+                </li>
+            </ul>
+        </aside>
+    </div>
+</div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo/white.png" srcset="img/logo/white@2x.png 2x" alt="Bonplan">
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, assumenda! Ducimus numquam reiciendis accusantium maxime cupiditate, quidem vero, atque sit qui ratione dicta quod. Repellendus quisquam et quod eos earum.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/app.js"></script>
+</body>
+
+</html>

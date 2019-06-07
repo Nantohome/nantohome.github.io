@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/filter-control</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <filter x="-22.9%" y="-14.6%" width="145.8%" height="145.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.165140146   0 0 0 0 0.251248937  0 0 0 0.144870924 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Headers/Filter/1280" transform="translate(-1211.000000, -28.000000)">
+            <g id="Group" transform="translate(836.000000, 0.000000)">
+                <g id="Icons/filter-control" transform="translate(378.000000, 29.000000)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M10.139726,8.40576182 L10.139726,15.5942382 C10.139726,15.8182187 9.8844274,16 9.56986301,16 C9.25529863,16 9,15.8182187 9,15.5942382 L9,8.40576182 C9,8.18137553 9.25529863,8 9.56986301,8 C9.8844274,8 10.139726,8.18137553 10.139726,8.40576182 Z M12.769863,8.58715596 L12.769863,15.412844 C12.769863,15.7369541 12.5145644,16 12.2,16 C11.8854356,16 11.630137,15.7369541 11.630137,15.412844 L11.630137,8.58715596 C11.630137,8.26245872 11.8854356,8 12.2,8 C12.5145644,8 12.769863,8.26245872 12.769863,8.58715596 Z M15.4,9.04918033 L15.4,14.9508197 C15.4,15.5299672 15.1452712,16 14.830137,16 C14.5150027,16 14.260274,15.5299672 14.260274,14.9508197 L14.260274,9.04918033 C14.260274,8.47003279 14.5150027,8 14.830137,8 C15.1452712,8 15.4,8.47003279 15.4,9.04918033 Z" id="Combined-Shape" fill="#CFDCE3" fill-rule="evenodd"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
