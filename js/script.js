@@ -3,6 +3,24 @@ $(document).ready(function(){
 	var dropZone = $("#upload-box"),
 		maxFileSize = 1000000000; // max file size = 1Gb
 
+	if (typeof(window.FileReader) == 'undefined') {
+		dropZone.addClass("not-drop");
+	};
+	dropZone[0].ondragover = function() {
+		dropZone.addClass('hover');
+		return false;
+	};
+	dropZone[0].ondragleave = function() {
+		dropZone.removeClass('hover');
+		return false;
+	};
+	dropZone[0].ondrop = function(event) {
+		event.preventDefault();
+		dropZone.removeClass('hover');
+		dropZone.addClass('drop');
+	};
+
+
 	$(".work-slider-box").slick({
 		dots: false,
 		infinite: false,
