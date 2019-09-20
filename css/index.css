@@ -137,6 +137,9 @@ body{
 	height:618px;
 	z-index:20;
 }
+.head-link-wrap{
+	display:none;
+}
 
 /******************************************************************************
 	Second slide
@@ -270,6 +273,135 @@ body{
 	background:#23d1da;
 	text-align:center;
 	border-radius:8px;
+}
+
+/******************************************************************************
+	Fourth slide
+******************************************************************************/
+.fourth-slide{
+	display:flex;
+	flex-flow:column nowrap;
+	align-items:center;
+}
+.fourth-slide-title{
+	margin-top:100px;
+	margin-left:120px;
+	font-family:"Intro";
+	font-size:48px;
+	color:#ffc700;
+	letter-spacing:-1px;
+}
+.fourth-slide-gallery-wrap{
+	position:relative;
+	width:1204px;
+	margin:0 auto;
+}
+.fourth-slide-gallery{
+}
+.fourth-slide-gallery-item{
+	width:1204px;
+	height:540px;
+	overflow:hidden;
+}
+.fourth-slide-gallery-itemwrap{
+	width:1204px;
+	height:540px;
+	display:flex;
+	flex-flow:row nowrap;
+	padding-top:75px;
+	padding-left:236px;
+	overflow:hidden;
+}
+.fourth-slide-gallery-item-imgwrap{
+	position:relative;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:center;
+	align-items:center;
+	width:311px;
+	height:306px;
+	background:#ffe883;
+	overflow:visible;
+}
+.fourth-slide-gallery-item-img{
+	height:auto;
+	max-height:540px;
+}
+.fourth-slide-gallery-item-img-label{
+	position:absolute;
+	bottom:13px;
+	left:13px;
+	padding:0 12px;
+	height:24px;
+	border-radius:4px;
+	font-size:14px;
+	line-height:24px;
+	color:#fff;
+	background:#00c8d1;
+}
+.fourth-slide-gallery-item-textwrap{
+	padding-top:40px;
+	padding-left:120px;
+}
+.fourth-slide-gallery-item-text_top{
+	
+}
+.fourth-slide-gallery-item-text_top-name{
+	font-family:"Intro";
+	font-size:48px;
+	letter-spacing:-1px;
+	color:#ffc700;
+	text-transform:uppercase;
+}
+.fourth-slide-gallery-item-text_top-val{
+	margin-left:10px;
+	font-size: 16px;
+	color:#b2b2b2;
+}
+.fourth-slide-gallery-item-text_top-price{
+	margin-left:35px;
+	font-family:"Intro";
+	font-size:48px;
+	letter-spacing:-1px;
+	color:#00c8d1;
+}
+.fourth-slide-gallery-item-text_top-cur{
+	font-size:12px;
+	color:#dddddd;
+}
+.fourth-slide-gallery-item-text_mid{
+	margin-top:12px;
+	font-size:16px;
+	line-height:24px;
+	color:#c6c6c6;
+}
+.fourth-slide-gallery-item-text_bottom{
+	margin-top:16px;
+	font-size:16px;
+	line-height:24px;
+	color:#c6c6c6;	
+}
+.fourth-slide-gallery-control{
+	position:absolute;
+	width:455px;
+	height:38px;
+	left:161px;
+	top:211px;
+	z-index:40;
+}
+.fourth-slide-gallery-control .slick-prev{
+	position:absolute;
+	left:0;
+}
+.fourth-slide-gallery-control .slick-next{
+	position:absolute;
+	right:0;
+}
+.fourth-slide-gallery-control .slick-prev.slick-disabled{
+	background-image:url("../i/gal-left-arr-dis.png");
+}
+.fourth-slide-gallery-control .slick-next.slick-disabled{
+	background-image:url("../i/gal-right-arr-dis.png");
 }
 
 /******************************************************************************
@@ -479,7 +611,9 @@ body{
 .sixth-slide-desc_colorized{
 	color:#00c8d1;
 }
-
+.sixth-slide-title-mob{
+	display:none;
+}
 /******************************************************************************
 	Seventh slide
 ******************************************************************************/

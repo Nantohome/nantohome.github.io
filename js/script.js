@@ -12,6 +12,14 @@ $(document).ready(function(){
 		appendArrows: $(".gallery-control"),
 		appendDots: $(".gallery-control")
 	});
+	
+	$(".fourth-slide-gallery").slick({
+		infinite: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		appendArrows: $(".fourth-slide-gallery-control")
+	});
 
 });
 
