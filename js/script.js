@@ -1,40 +1,45 @@
 $(document).ready(function(){
 
-	var dropZone = $("#upload-box"),
-		maxFileSize = 1000000000; // max file size = 1Gb
-
-	if (typeof(window.FileReader) == 'undefined') {
-		dropZone.addClass("not-drop");
-	};
-	dropZone[0].ondragover = function() {
-		dropZone.addClass('hover');
-		return false;
-	};
-	dropZone[0].ondragleave = function() {
-		dropZone.removeClass('hover');
-		return false;
-	};
-	dropZone[0].ondrop = function(event) {
-		event.preventDefault();
-		dropZone.removeClass('hover');
-		dropZone.addClass('drop');
-	};
-
-
-	$(".work-slider-box").slick({
-		dots: false,
-		infinite: false,
-		appendArrows: $(".work-slider"),
-		prevArrow:'<div class="work-slider-arr work-slider-left_arr"></div>',
-		nextArrow:'<div class="work-slider-arr work-slider-right_arr"></div>'
+	$(document).ready(function(){
+		$(".fifth-slide-tabs").lightTabs();
 	});
 
-	$(".review-slider-box").slick({
-		dots: false,
+	$(".gallery").slick({
 		infinite: true,
-		appendArrows: $(".review-slider"),
-		prevArrow:'<div class="review-slider-arr review-slider-left_arr"></div>',
-		nextArrow:'<div class="review-slider-arr review-slider-right_arr"></div>'
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		dots: true,
+		appendArrows: $(".gallery-control"),
+		appendDots: $(".gallery-control")
 	});
 
 });
+
+(function($){				
+	jQuery.fn.lightTabs = function(options){
+
+		var createTabs = function(){
+			tabs = this;
+			i = 0;
+			
+			showPage = function(i){
+				$(tabs).children("div").children("div").hide();
+				$(tabs).children("div").children("div").eq(i).show();
+				$(tabs).children("ul").children("li").removeClass("active");
+				$(tabs).children("ul").children("li").eq(i).addClass("active");
+			}
+								
+			showPage(0);				
+			
+			$(tabs).children("ul").children("li").each(function(index, element){
+				$(element).attr("data-page", i);
+				i++;                        
+			});
+			
+			$(tabs).children("ul").children("li").click(function(){
+				showPage(parseInt($(this).attr("data-page")));
+			});				
+		};		
+		return this.each(createTabs);
+	};	
+})(jQuery);
