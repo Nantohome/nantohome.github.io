@@ -1,4 +1,8 @@
-(function () {
-var password = prompt('Введите пароль');
-if (new RegExp('Xena'.replace(/(\.|\+|\[|\]|\(|\)|\{|\}|\*|\?|\$|\^|\\|\/|\.)/g, '\\$1')).test(password)); else top.location.href = '/hell';
-})();
+$(document).ready(function(){
+
+
+});
+
+jQuery.exists = function(selector) {
+	return ($(selector).length > 0);
+}
