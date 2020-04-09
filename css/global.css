@@ -279,10 +279,10 @@ body{
 	font-weight:600;
 	color:var(--black);
 }
-.bike-card-titlelink:hover{
+.bike-card__titlelink:hover{
 	color:var(--red);
 }
-.bike-card-titlelink:active{
+.bike-card__titlelink:active{
 	color:var(--grey);
 }
 .bike-card__pricewrap{
