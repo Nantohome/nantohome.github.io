@@ -1,1 +1,721 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>AEP</title><link href=/js/app.f07d16b0.js rel=preload as=script><link href=/js/chunk-vendors.d51293b4.js rel=preload as=script></head><body><noscript><strong>We're sorry but www doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.d51293b4.js></script><script src=/js/app.f07d16b0.js></script></body></html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Main</title>
+	<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="main">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-wrap inner">
+				<a href="/" class="header__logo"></a>
+				<div class="header-wrap-top">
+					<div class="header-wrap-top-left">
+						<div class="header-iconbox">
+							<span class="header-iconbox__icon header-iconbox__icon_tel"></span>
+							<span class="header-iconbox__icon header-iconbox__icon_wa"></span>
+							<span class="header-iconbox__icon header-iconbox__icon_vb"></span>
+							<span class="header-iconbox__icon header-iconbox__icon_tg"></span>
+						</div>
+						<div class="header-phonebox">
+							<a href="tel:+78127703020" class="header-phonebox__phone">8 812 770-30-20&nbsp;&mdash;</a>
+							<span class="header-phonebox__text">&nbsp;пн-пт с 10:00 до 19:00</span>
+						</div>
+						<div class="header-mailbox">
+							<a href="mailto:info@bike-magazine.ru" class="header-mailbox__mail">info@bike-magazine.ru</a>
+						</div>
+						<div class="header-socbox">
+							<a href="#" class="header-socbox__link header-socbox__link_vk"></a>
+							<a href="#" class="header-socbox__link header-socbox__link_ig"></a>
+							<a href="#" class="header-socbox__link header-socbox__link_yt"></a>
+						</div>
+					</div>
+					<div class="header-login">
+						<a href="#" class="header-login__link">Вход</a>
+					</div>
+				</div>
+				<div class="header-wrap-bottom">
+					<form action="#" class="header-search">
+						<input class="header-search__input" type="text" placeholder="Искать" />
+						<button class="header-search__btn" type="submit"></button>
+					</form>
+					<a href="#" class="header-compare">
+						<span class="counter header-compare__counter">9<span class="counter-plus">+</span></span>
+					</a>
+					<a href="#" class="header-cart">
+							<span class="counter header-cart__counter">3</span>
+						Корзина
+					</a>
+				</div>
+			</div>
+		</header>
+		<nav class="navigation inner20">
+			<a href="#" class="navigation__item">КАТАЛОГ</a>
+			<a href="#" class="navigation__item">АКЦИИ</a>
+			<a href="#" class="navigation__item active">ПРОКАТ</a>
+			<a href="#" class="navigation__item">МАСТЕРСКАЯ</a>
+			<a href="#" class="navigation__item">ОПЛАТА И ДОСТАВКА</a>
+			<a href="#" class="navigation__item">ЖУРНАЛ</a>
+			<a href="#" class="navigation__item">КОНТАКТЫ</a>
+		</nav>		<div class="main-wrap">
+			<div class="main-carousel inner20">
+				<div id="main-carousel1__nav" class="main-carousel__nav"></div>
+				<div id="main-carousel1" class="main-carousel-wrap">
+					<div class="main-carousel__item">
+						<img src="upload/banner1.jpg" />
+					</div>
+					<div class="main-carousel__item">
+						<img src="upload/banner1.jpg" />
+					</div>
+					<div class="main-carousel__item">
+						<img src="upload/banner1.jpg" />
+					</div>
+				</div>
+			</div>
+			<div class="main-filter">
+				<div class="main-filter-wrap inner20">
+					<div class="main-filter__title">ВЫБРАТЬ ВЕЛОСИПЕД</div>
+					<form action="#" class="main-filter-form">
+						<div class="main-filter-form-top">
+							<div class="main-filter__selectwrap">
+								<select class="main-filter__select">
+									<option>Тип велосипеда</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+								</select>
+							</div>
+							<div class="main-filter__selectwrap">
+								<select class="main-filter__select">
+									<option>Пол</option>
+									<option>Мужской</option>
+									<option>Женский</option>
+								</select>
+							</div>
+							<div class="main-filter__selectwrap">
+								<select class="main-filter__select">
+									<option>Возраст</option>
+									<option>3 - 7</option>
+									<option>7 - 12</option>
+									<option>12 - 20</option>
+									<option>20 - 80</option>
+								</select>
+							</div>
+						</div>
+						<div class="main-filter-form-bottom">
+							<div class="main-filter-fromprice-wrap">
+								<span class="main-filter-fromprice-text1">Цена</span>
+								<span class="main-filter-fromprice-text2">от</span>
+								<input class="main-filter-fromprice" type="text">
+								<span class="main-filter-fromprice-text3">руб.</span>
+							</div>
+							<div class="main-filter-toprice-wrap">
+								<span class="main-filter-toprice-text1">до</span>
+								<input class="main-filter-toprice" type="text">
+								<span class="main-filter-toprice-text2">руб.</span>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="main-filter-btnwrap">
+					<a href="#" class="btn btn_arr main-filter-btn">Подобрать</a>
+				</div>
+			</div>
+			<div class="main-news">
+				<div class="main-news-titlewrap">
+					<div class="main-news-title">Новинки</div>
+					<a href="#" class="main-news-link">Смотреть все новинки</a>
+				</div>
+				<div class="main-news-carousel">
+					<div id="main-carousel2__nav" class="main-newshits-carousel__nav"></div>
+					<div id="main-carousel2" class="main-news-carouselwrap">
+						<div class="bike-card new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod1.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">14 360<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod2.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Forward Apache 29 2.0 disc 2019</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">19 370<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new sale">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod3.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Dewolf Ridly 40 (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">26 100<span>руб.</span></div>
+								<div class="bike-card__newprice">23 900<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new sale">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod1.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi Super Super</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">114 360<span>руб.</span></div>
+								<div class="bike-card__newprice">111 290<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod4.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Schwinn Traveler (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">23 960<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod2.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">14 360<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod3.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Forward Apache 29 2.0 disc 2019</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">19 370<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit sale">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod1.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Dewolf Ridly 40 (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">26 100<span>руб.</span></div>
+								<div class="bike-card__newprice">23 900<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit sale new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod3.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi Super Super</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">114 360<span>руб.</span></div>
+								<div class="bike-card__newprice">111 290<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod2.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Schwinn Traveler (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">23 960<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-hits">
+				<div class="main-hits-titlewrap">
+					<div class="main-hits-title">Хиты продаж</div>
+					<a href="#" class="main-hits-link">Смотреть все хиты продаж</a>
+				</div>
+				<div class="main-hits-carousel">
+					<div id="main-carousel3__nav" class="main-newshits-carousel__nav"></div>
+					<div id="main-carousel3" class="main-hits-carouselwrap">
+						<div class="bike-card hit">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod1.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">14 360<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod2.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Forward Apache 29 2.0 disc 2019</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">19 370<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit sale">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod3.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Dewolf Ridly 40 (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">26 100<span>руб.</span></div>
+								<div class="bike-card__newprice">23 900<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit sale new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod1.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi Super Super</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">114 360<span>руб.</span></div>
+								<div class="bike-card__newprice">111 290<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card hit">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod4.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Schwinn Traveler (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">23 960<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod2.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">14 360<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod4.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Forward Apache 29 2.0 disc 2019</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">19 370<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new sale">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod1.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Dewolf Ridly 40 (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">26 100<span>руб.</span></div>
+								<div class="bike-card__newprice">23 900<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new sale">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod3.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Shulz Max Multi Super Super</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<!-- <div class="bike-card__price">14 360<span>руб.</span></div> -->
+								<div class="bike-card__oldprice">114 360<span>руб.</span></div>
+								<div class="bike-card__newprice">111 290<span>руб.</span></div>
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+						<div class="bike-card new">
+							<div class="bike-card__iconwrap">
+								<span class="bike-card__icon bike-card__sale"></span>
+								<span class="bike-card__icon bike-card__new"></span>
+								<span class="bike-card__icon bike-card__hit"></span>
+							</div>
+							<div class="bike-card__imgwrap">
+								<img class="bike-card__img" src="upload/mod2.jpg">
+							</div>
+							<div class="bike-card__titlewrap">
+								<a href="#" class="bike-card__titlelink">Schwinn Traveler (2019)</a>
+							</div>
+							<div class="bike-card__pricewrap">
+								<div class="bike-card__price">23 960<span>руб.</span></div>
+								<!-- <div class="bike-card__oldprice">14 360<span>руб.</span></div>
+								<div class="bike-card__newprice">14 360<span>руб.</span></div> -->
+							</div>
+							<div class="bike-card__btnwrap">
+								<a href="#" class="btn-cart bike-card__btncart">Купить</a>
+								<a href="#" class="btn-compare bike-card__btncompare"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="journal inner20">
+				<div class="journal__title">ЖУРНАЛ</div>
+				<div class="journal-wrap">
+					<div class="article-box article-box_1">
+						<div class="article-box-imgwrap">
+							<img class="article-box__img" src="upload/img1.jpg" />
+						</div>
+						<a href="#" class="article-box-textwrap">
+							<div class="article-box__date">27 января 2020</div>
+							<div class="article-box__title">Как выбрать велосипед<br>для ребенка</div>
+							<div class="article-box__text"></div>
+						</a>
+					</div>
+					<div class="article-box article-box_2">
+						<div class="article-box-imgwrap">
+							<img class="article-box__img" src="upload/img2.jpg" />
+						</div>
+						<a href="#" class="article-box-textwrap">
+							<div class="article-box__date">21 января 2020</div>
+							<div class="article-box__title">Велосипед как стиль жизни</div>
+							<div class="article-box__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum.</div>
+						</a>
+					</div>
+					<div class="article-box article-box_3">
+						<div class="article-box-imgwrap">
+							<img class="article-box__img" src="upload/img3.jpg" />
+						</div>
+						<a href="#" class="article-box-textwrap">
+							<div class="article-box__date">09 декабря 2019</div>
+							<div class="article-box__title">Ремонт своими руками:<br>быть или не быть?</div>
+							<div class="article-box__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</div>
+						</a>
+					</div>
+				</div>
+				<div class="journal-btnwrap">
+					<a href="#" class="btn btn_arr journal-btn">Смотреть журнал</a>
+				</div>
+			</div>
+		</div>		<footer class="footer">
+			<div class="footer-wrap inner20">
+				<div class="footer-left">
+					<div class="footer-contacts">
+						<div class="footer-iconbox">
+							<span class="footer-iconbox__icon footer-iconbox__icon_tel"></span>
+							<span class="footer-iconbox__icon footer-iconbox__icon_wa"></span>
+							<span class="footer-iconbox__icon footer-iconbox__icon_vb"></span>
+							<span class="footer-iconbox__icon footer-iconbox__icon_tg"></span>
+						</div>
+						<div class="footer-phonebox">
+							<a href="tel:+78127703020" class="footer-phonebox__phone">8 812 770-30-20&nbsp;&mdash;</a>
+							<div class="footer-phonebox__text">пн-пт с 10:00 до 19:00</div>
+						</div>
+						<div class="footer-mailbox">
+							<a href="mailto:info@bike-magazine.ru" class="footer-mailbox__mail">info@bike-magazine.ru</a>
+						</div>
+						<div class="footer-socbox">
+							<a href="#" class="footer-socbox__link footer-socbox__link_vk"></a>
+							<a href="#" class="footer-socbox__link footer-socbox__link_ig"></a>
+							<a href="#" class="footer-socbox__link footer-socbox__link_yt"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-right">
+					<div class="footer-nav">
+						<div class="footer-nav__item">
+							<a href="#" class="footer-nav__itemlink">КАТАЛОГ</a>
+						</div>
+						<div class="footer-nav__item">
+							<a href="#" class="footer-nav__itemlink">АКЦИИ</a>
+						</div>
+						<div class="footer-nav__item">
+							<a href="#" class="footer-nav__itemlink">ПРОКАТ</a>
+						</div>
+						<div class="footer-nav__item">
+							<a href="#" class="footer-nav__itemlink">МАСТЕРСКАЯ</a>
+						</div>
+						<div class="footer-nav__item footer-subnav">
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Велосипеды</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Аксессуары</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">BMX</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Экипировка</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Самокаты</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Активный отдых</a>
+							</div>
+							<div class="footer-subnav__item">								
+								<a href="#" class="footer-subnav__itemlink">Комплектующие</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Зимние товары</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Инструменты</a>
+							</div>
+							<div class="footer-subnav__item">
+								<a href="#" class="footer-subnav__itemlink">Тренажеры</a>
+							</div>
+						</div>
+						<div class="footer-nav__item">
+							<a href="#" class="footer-nav__itemlink">ОПЛАТА И ДОСТАВКА</a>
+						</div>
+						<div class="footer-nav__item">
+							<a href="#" class="footer-nav__itemlink">ЖУРНАЛ</a>
+						</div>
+						<div class="footer-nav__item">
+							<a href="#" class="footer-nav__itemlink">КОНТАКТЫ</a>
+						</div>
+					</div>
+					<div class="footer-copy">Copyright © 2020 Bike-Magazine.ru - Велосипеды, аксессуары и комплектующие.</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
