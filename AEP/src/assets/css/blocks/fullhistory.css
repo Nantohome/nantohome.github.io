@@ -1,0 +1,20 @@
+.fullhistory__body{
+	padding-bottom:20px;
+}
+.fullhistory-box{
+	padding-top:10px;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-between;
+	align-items:stretch;
+	height:480px;
+}
+.fullhistory-box-colleft{
+	flex-shrink:0;
+	width:38%;
+	min-width:340px;
+	margin-right:20px;
+}
+.fullhistory-box .calls{
+	margin-top:20px;
+}

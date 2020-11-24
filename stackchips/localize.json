@@ -1,0 +1,96 @@
+{
+  "EN": {
+    "HEADER": {
+      "navigation": ["Fairness", "White Paper", "Dividend", "Referrals", "How To Play"],
+      "dropdown": {
+        "title": "Games",
+        "links": [
+          {
+            "title": "Google",
+            "link": "https://google.com/"
+          },
+          {
+            "title": "YouTube",
+            "link": "https://youtube.com/"
+          }
+        ]
+      },
+      "login_btn": "login"
+    },
+    "GAME": {
+      "balance": "Account Balance:",
+      "roll_under_title": "Roll under to win",
+      "payout_title": "Payout on win",
+      "form_titles": ["Roll under to win", "Payout", "Win chance"],
+      "roll_btn": "ROLL DICE",
+      "auto_bet": {
+        "switch": "Auto Bet",
+        "hint": "After the automatic bid is enabled, the bid is automatically pressed until canceled in accordance with the current bid setting."
+      }
+    },
+    "TABLE": {
+      "tabs": [
+        {
+          "title": "All bets",
+          "data-attr": "all"
+        },
+        {
+          "title": "My bets",
+          "data-attr": "mine"
+        },
+        {
+          "title": "Huge wins",
+          "data-attr": "huge"
+        }
+      ],
+      "table_titles": ["Time", "Bettor", "Roll Under", "Bet", "Roll", "Payout"]
+    }
+  },
+  "RU": {
+    "HEADER": {
+      "navigation": ["Честность", "Чистый лист", "Дивиденд", "Рефералы", "Как Играть"],
+      "dropdown": {
+        "title": "Игры",
+        "links": [
+          {
+            "title": "Google",
+            "link": "https://google.com/"
+          },
+          {
+            "title": "YouTube",
+            "link": "https://youtube.com/"
+          }
+        ]
+      },
+      "login_btn": "Войти"
+    },
+    "GAME": {
+      "balance": "Баланс аккаунта:",
+      "roll_under_title": "Прокрути, чтобы выйграть",
+      "payout_title": "Оплата выигрыша",
+      "form_titles": ["Прокрути, чтобы выйграть", "Выплата", "Шанс выигрыша"],
+      "roll_btn": "БРОСИТЬ КОСТЬ",
+      "auto_bet": {
+        "switch": "Автоматическая ставка",
+        "hint": "После включения автоматической ставки, игра будет работать в автоматическом режиме до тех пор, пока не будет отключена функция автоматической ставки."
+      }
+    },
+    "TABLE": {
+      "tabs": [
+        {
+          "title": "Все ставки",
+          "data-attr": "all"
+        },
+        {
+          "title": "Мои ставки",
+          "data-attr": "mine"
+        },
+        {
+          "title": "Крупные выигрыши",
+          "data-attr": "huge"
+        }
+      ],
+      "table_titles": ["Время", "Каппер", "Roll Under", "Ставка", "Ролл (Игра)", "Выплата"]
+    }
+  }
+}

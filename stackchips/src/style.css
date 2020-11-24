@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+body, html {
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+  background:#05061c;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+#app{
+	min-width:600px;
+	overflow:auto;
+}
