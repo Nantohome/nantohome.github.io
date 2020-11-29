@@ -1,64 +1,41 @@
-const DEBOUNCE_DELAY = 100;
+document.addEventListener("DOMContentLoaded", function() {
 
-let scrollPos = 0,
-	activeScreen = $("#screen1");
+/* screen observer */
+	let observerMarginBottom = document.documentElement.clientHeight - document.getElementById("header").offsetHeight,
+		observerMargin = "0px 0px -" + observerMarginBottom + "px 0px",
+		observerOptions = {
+			rootMargin: observerMargin, 
+			threshold: 0
+		};
+
+	let screenArr = document.querySelectorAll(".screen");
+
+	let screenObserver = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				
+				let screen = entry.target,
+					headerClass = "header " + $(screen).data("header-class");
+				
+				document.getElementById("header").className = headerClass;
+			}
+		})
+	}, observerOptions);
+
+	screenArr.forEach((v) => {
+		screenObserver.observe(v);
+	});
 
 
-$(document).ready(function(){
-
-	$(window).on("scroll", debounce(function() {
+/* toggle gallery tabs */
+	$(".screen4__btn").on("click", function() {
+		let gallery = $(this).data("tab");
 		
-		let scrollTopStart = $(window).scrollTop(),
-			nextScreen = $(activeScreen).data("next-screen"),
-			prevScreen = $(activeScreen).data("prev-screen");
+		$(".screen4__btn, .screen4-gallery").removeClass("active");
+		$(this).addClass("active");
+		$(gallery).addClass("active");
 
-		if (scrollTopStart > scrollPos) {
-			
-			let scrollTopEnd = $(nextScreen).offset().top,
-				headerClass = $(nextScreen).data("header-class");
-			
-			scrollPos = scrollTopEnd;
-			$("#header").removeClass("negative").addClass(headerClass);
-			$(window).scrollTop(scrollTopEnd);
-			activeScreen = nextScreen;
+		return false;
+	});
 
-		} else if (scrollTopStart < scrollPos) {
-			
-			let scrollTopEnd = $(prevScreen).offset().top,
-				headerClass = $(prevScreen).data("header-class");
-
-			scrollPos = scrollTopEnd;
-			$("#header").removeClass("negative").addClass(headerClass);
-			$(window).scrollTop(scrollTopEnd);
-			activeScreen = prevScreen;
-		
-		} else {
-
-			return false;
-		}
-
-	}, DEBOUNCE_DELAY));
-
-});
-
-function debounce(f, t) {
-	return function (args) {
-		let previousCall = this.lastCall;
-		this.lastCall = Date.now();
-		if (previousCall && ((this.lastCall - previousCall) <= t)) {
-			clearTimeout(this.lastCallTimer);
-		}
-		this.lastCallTimer = setTimeout(() => f(args), t);
-	}
-}
-
-
-$(".screen4__btn").on("click", function() {
-	let gallery = $(this).data("tab");
-	
-	$(".screen4__btn, .screen4-gallery").removeClass("active");
-	$(this).addClass("active");
-	$(gallery).addClass("active");
-
-	return false;
 });
