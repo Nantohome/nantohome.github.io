@@ -623,6 +623,9 @@ select{
 	font-size:18px;
 	line-height:24px;
 }
+.comments-linkwrap{
+	text-align:center;
+}
 a.comments__link{
 	font-size:16px;
 	line-height:24px;
@@ -651,8 +654,9 @@ a.comments__link{
 	background:#FFFFFF;
 }
 .technics-item__img{
-	display:inline-block;
-	width:100%;
+	display: block;
+    max-width:100%;
+    margin:0 auto;
 }
 .technics-item__name{
 	display:inline-block;
@@ -794,6 +798,7 @@ a.comments__link{
 }
 .order__name.section__name{
 	margin:0 0 32px 0;
+	text-align:left;
 }
 .order__text{
 	width:325px;
@@ -912,7 +917,7 @@ a.comments__link{
 	margin:0; 
 }
 
-@media only screen and (max-width: 1680px) and (min-width: 1681px) {
+@media only screen and (max-width: 1680px) and (min-width: 1281px) {
 	.inner{
 		max-width:1280px;
 	}
@@ -966,7 +971,7 @@ a.comments__link{
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
 	.inner{
 		max-width:none;
 		padding-left:16px;
@@ -1543,7 +1548,7 @@ a.comments__link{
 		display:flex;
 		flex-flow:column nowrap;
 		justify-content:flex-start;
-		align-items:flex-start;
+		align-items:stretch;
 		padding:16px;
 	}
 	.order__img{
@@ -1647,6 +1652,108 @@ a.comments__link{
 	}
 	.footer-bottom__col a:last-child{
 		margin:0; 
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+	.header-nav{
+		margin-left:32px;
+	}
+	.inner{
+		max-width:992px;
+	}
+	.section{
+		max-width:992px;
+	}
+	.section-list{
+		width:992px;
+	}
+	.section-list-row-content {
+		display: flex;
+		flex-flow:row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		width:100%;
+		margin-bottom:-40px;
+	}
+	.section-list-row-item{
+		width:48.5%;
+		margin-bottom:40px;
+	}
+	.calc-form{
+		width:360px;
+		padding:16px;
+	}
+	.calc-content {
+    	width:600px;
+    	text-align: center;
+	}
+	.calc__img{
+		width:100%;
+		height:auto;
+	}
+	.calc__price{
+		width:190px;
+		font-size:18px;
+	}
+	.section.section-table,
+	.section.section-container{
+    	width:992px;
+    	max-width:992px;
+	}
+	.section-container-imgwrap {
+    	width:600px;
+    	margin:0;
+	}
+	.section-container-text{
+		width:360px;
+	}
+	.comments__item{
+		width:48.5%;
+	}
+	.technics-item {
+		width:32%;
+		padding:20px 40px;
+	}
+	.order-wrap {
+	    padding: 40px 0 40px 40px;
+	}
+	.services-content {
+    	justify-content:center;
+	}
+	.services__cell {
+    	margin-left:20px;
+    	margin-right:20px;
+	}
+	.footer-top {
+    	height:auto;
+        padding:16px 0;
 	}
 
 }
