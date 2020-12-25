@@ -9,6 +9,17 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 	<body class="main">
+		<div id="modal" class="modal">
+			<span id="modal-close" class="modal-close"></span>
+			<div class="modal-header">Оформить заказ</div>
+			<div class="modal-body">
+				<div class="modal__phone">8 (499) 348-84-49</div>
+				<div class="btn">
+					<a href="tel:+7495000069" class="btn__link">Круглосуточно без выходных</a>
+				</div>
+				<div class="modal__desc">Звоните, подберем вариант<br />Бесплатно проконсультируем</div>
+			</div>
+		</div>
 		<div class="header">
 			<div class="header-wrap inner">
 				<div class="header-content">
@@ -38,59 +49,32 @@
 				<div class="calc-form">
 					<div class="calc-form__name">Расчет цены за вывоз</div>
 					<label for="calc-type">Выберите тип мусора</label>
-					<select id="calc-type">
-						<option>Строительный</option>
-						<option>Крупногабаритный</option>
-						<option>Бытовой</option>
-						<option>Смешанный</option>
-					</select>
+					<select id="calc-type"></select>
 					<label for="calc-district">Выберите округ</label>
-					<select id="calc-district">
-						<option>Центр ЦАО</option>
-						<option>Юго-Восточный округ ЮВАО</option>
-						<option>Южный округ ЮАО</option>
-						<option>Юго-Западный округ ЮЗАО</option>
-						<option>Северный округ САО</option>
-						<option>Северо-Восточный округ СВАО</option>
-						<option>Восточный округ ВАО</option>
-						<option>Западный округ ЗАО</option>
-						<option>Северо-Западный округ СЗАО</option>
-						<option>Новая Москва НАО</option>
-					</select>
+					<select id="calc-district"></select>
 					<label for="calc-vol">Выберите объем</label>
-					<select id="calc-vol">
-						<option>8 м3</option>
-						<option>20 м3</option>
-						<option>27 м3</option>
-						<option>Газель</option>
-					</select>
+					<select id="calc-vol"></select>
 					<label for="calc-count">Выберите количество</label>
-					<select id="calc-count">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5</option>
-						<option>6</option>
-						<option>7</option>
-						<option>8</option>
-						<option>9</option>
-						<option>10</option>
-					</select>
+					<select id="calc-count"></select>
 					<label class="checkbox">
 						<input id="calc-loading" type="checkbox" name="loading">
 						<span>Погрузка</span>
 					</label>
 					<div class="technics-item__btn btn btn_large">
-						<span id="calc__btn" class="btn__link">Рассчитать цену</span>
+						<span id="calc-btn" class="btn__link">Рассчитать цену</span>
+					</div>
+					<div id="calc-pricewrap" class="calc-pricewrap">
+						<div class="calc__price">Итого: <span id="calc-price"></span>&nbsp;руб.</div>
+						<div class="calc-pricewrap__text">Звоните для заказа</div>
+						<div class="calc-pricewrap__phone">8 (499) 348-84-49</div>
 					</div>
 				</div>
 				<div class="calc-content">
 					<img class="calc__img" src="img/kamaz-large.jpg" width="688" height="491" alt="">
-					<div class="calc-pricewrap">
-						<div class="calc__price">8 м3 - 10000 руб.</div>
-						<div class="calc__price">20 м3 - 19000 руб.</div>
-						<div class="calc__price">27 м3 - 22000 руб.</div>
+					<div class="calc-content-pricewrap">
+						<div class="calc-content__price">8 м3 - 10000 руб.</div>
+						<div class="calc-content__price">20 м3 - 19000 руб.</div>
+						<div class="calc-content__price">27 м3 - 22000 руб.</div>
 					</div>
 					<a href="#price-moscow" class="section-linkwrap__link">Цена на вывоз мусора по округам</a>
 				</div>
@@ -100,7 +84,7 @@
 			<div class="section-list-row-content">
 				<div class="section-list-row-item icon-track24">
 					<div class="section-list-row-item__name">Быстро</div>
-					<div class="section-list-row-item__text">Привезем или вывезем контейнер в<br />течение одного дня</div>
+					<div class="section-list-row-item__text">Привезем или вывезем контейнер в течение одного дня</div>
 				</div>
 				<div class="section-list-row-item icon-calendar">
 					<div class="section-list-row-item__name">Точно в сроки</div>
@@ -314,17 +298,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="comments section">
+		<div id="comments" class="comments section">
 			<div class="section__name">Отзывы клиентов</div>
-			<div class="comments-list">
+			<div id="comments-wrap" class="comments-list">
 				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
 					<audio controls preload="none">
 						<source src="audio/1.mp3" type="audio/mpeg" />
 					</audio>
 					<div class="comments__item-textwrap">
-						<div itemprop="name">Отзыв Галина, М.</div>
+						<div class="comments__item-name" itemprop="name"></div>
 						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text">А это блюдо у нас дома получило максимально возможный комплимент в свой адрес в виде вопроса от мужа: “А чего раньше так не готовила?”)) Для хозяйки, это, конечно, так себе комплимент, но хозяйка решила не обижаться, затаиться и секреты не выдавать.</div>
+						<div class="comments__item-text"></div>
 					</div>
 				</div>
 				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
@@ -332,9 +316,9 @@
 						<source src="audio/1.mp3" type="audio/mpeg" />
 					</audio>
 					<div class="comments__item-textwrap">
-						<div itemprop="name">Отзыв Галина, М.</div>
+						<div class="comments__item-name" itemprop="name"></div>
 						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text">А это блюдо у нас дома получило максимально возможный комплимент в свой адрес в виде вопроса от мужа: “А чего раньше так не готовила?”)) Для хозяйки, это, конечно, так себе комплимент, но хозяйка решила не обижаться, затаиться и секреты не выдавать.</div>
+						<div class="comments__item-text"></div>
 					</div>
 				</div>
 				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
@@ -342,9 +326,9 @@
 						<source src="audio/1.mp3" type="audio/mpeg" />
 					</audio>
 					<div class="comments__item-textwrap">
-						<div itemprop="name">Отзыв Галина, М.</div>
+						<div class="comments__item-name" itemprop="name"></div>
 						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text">А это блюдо у нас дома получило максимально возможный комплимент в свой адрес в виде вопроса от мужа: “А чего раньше так не готовила?”)) Для хозяйки, это, конечно, так себе комплимент, но хозяйка решила не обижаться, затаиться и секреты не выдавать.</div>
+						<div class="comments__item-text"></div>
 					</div>
 				</div>
 				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
@@ -352,9 +336,9 @@
 						<source src="audio/1.mp3" type="audio/mpeg" />
 					</audio>
 					<div class="comments__item-textwrap">
-						<div itemprop="name">Отзыв Галина, М.</div>
+						<div class="comments__item-name" itemprop="name"></div>
 						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text">А это блюдо у нас дома получило максимально возможный комплимент в свой адрес в виде вопроса от мужа: “А чего раньше так не готовила?”)) Для хозяйки, это, конечно, так себе комплимент, но хозяйка решила не обижаться, затаиться и секреты не выдавать.</div>
+						<div class="comments__item-text"></div>
 					</div>
 				</div>
 			</div>
@@ -432,23 +416,11 @@
 		</div>
 		<div class="scheme section section-list-row">
 			<div class="section__name">Схема работы</div>
-			<div class="section-list-row-content">
-				<div class="section-list-row-item icon-document">
-					<div class="section-list-row-item__name">Обработка заявки</div>
-					<div class="section-list-row-item__text">Наши специалисты обрабатывают заявку в течении 15 минут после вашего звонка</div>
-				</div>
-				<div class="section-list-row-item icon-track">
-					<div class="section-list-row-item__name">Подбор техники</div>
-					<div class="section-list-row-item__text">На основании предоставленных данных собирается необходимая спецтехника, автомашину нужной грузоподъемности и объемом кузова</div>
-				</div>
-				<div class="section-list-row-item icon-tools">
-					<div class="section-list-row-item__name">Установка контейнера</div>
-					<div class="section-list-row-item__text">Машина подается по адресу в указанное время, водитель будет остановлен в удобном месте</div>
-				</div>
-				<div class="section-list-row-item icon-delivery">
-					<div class="section-list-row-item__name">Сбор бункеров</div>
-					<div class="section-list-row-item__text">Заберем контейнер в точно оговоренное время</div>
-				</div>
+			<div id="scheme-wrap" class="section-list-row-content">
+				<div class="section-list-row-item icon-document"></div>
+				<div class="section-list-row-item icon-track"></div>
+				<div class="section-list-row-item icon-tools"></div>
+				<div class="section-list-row-item icon-delivery"></div>
 			</div>
 		</div>
 		<div id="filling" class="filling-table section section-table">
@@ -566,23 +538,11 @@
 		</div>
 		<div class="types section section-list">
 			<div class="section__name_small">Типы вывозимого мусора</div>
-			<div class="section-list-content">
-				<div class="section-list__item types__item_buildings">
-					<div>Строительные отходы</div>
-					<span>Заказать бункеровоз можно в любое время дня и ночи да да и еще больше, Заказать бункеровоз можно в любое время дня и ночи да да и еще больше</span>
-				</div>
-				<div class="section-list__item types__item_solid">
-					<div>Твердые бытовые отходы</div>
-					<span>Заказать бункеровоз можно в любое время дня и ночи да да и еще больше, Заказать бункеровоз можно в любое время дня и ночи да да и еще больше</span>
-				</div>
-				<div class="section-list__item types__item_large">
-					<div>Крупногабаритный мусор</div>
-					<span>Заказать бункеровоз можно в любое время дня и ночи да да и еще больше, Заказать бункеровоз можно в любое время дня и ночи да да и еще больше</span>
-				</div>
-				<div class="section-list__item types__item_mix">
-					<div>Смешанный мусор</div>
-					<span>Заказать бункеровоз можно в любое время дня и ночи да да и еще больше, Заказать бункеровоз можно в любое время дня и ночи да да и еще больше</span>
-				</div>
+			<div id="types-wrap" class="section-list-content">
+				<div class="section-list__item types__item_buildings"></div>
+				<div class="section-list__item types__item_solid"></div>
+				<div class="section-list__item types__item_large"></div>
+				<div class="section-list__item types__item_mix"></div>
 			</div>
 			<div class="types-btnwrap">
 				<a href="#">Строительный мусор</a>
@@ -605,23 +565,7 @@
 		</div>
 		<div id="questions" class="questions section section-list">
 			<div class="section__name">Возникающие вопросы</div>
-			<div class="section-list-content">
-				<div class="section-list__item">
-					<div>За какое время можно сделать заявку на вывоз мусора?</div>
-					<span>Заказ на вывоз мусора можно делать за 3-4 часа  до желаемого времени, а также за сутки и более.</span>
-				</div>
-				<div class="section-list__item">
-					<div>Производители ли вы вывоз мусора с погрузкой?</div>
-					<span>Мы предоставляем услуги грузчиков, или механизированную погрузку трактором. Стоимость погрузки уточняйте по телефону диспетчерской службы.</span>
-				</div>
-				<div class="section-list__item">
-					<div>На какой срок можно установить контейнер?</div>
-					<span>Контейнер можно установить на срок от 1,5ч. до суток. Аренда на более длительный срок, огаваривается индивидуально. Контейнера устанавливаются на сутки и более, только на охраняемом объекте.</span>
-				</div>
-				<div class="section-list__item">
-					<div>Работаете ли вы в ночное время, в праздничные и выходные дни</div>
-					<span>Мы работает круглосуточно, без выходных и праздничных дней. Заказ можете сделать по телефону на любой день и удобное время для Вас время, ежедневно с 8:00 - 21:00</span>
-				</div>
+			<div id="questions-wrap" class="section-list-content">
 				<div class="section-list__item">
 					<div class="red">Как можно сэкономить?</div>
 					<span>Посмотрите тарифы на вывоз малотоннажным транспортом. Цены в несколько раз дешевле.</span>
@@ -748,6 +692,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- <script src="js/script.js"></script> -->
+		<script src="js/data.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
