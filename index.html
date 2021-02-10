@@ -1,698 +1,171 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="robots" content="noindex, nofollow" />
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-		<title>Вывоз мусора в Москве и области</title>
-		<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Main page</title>
+		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/sprite.css">
 	</head>
 	<body class="main">
-		<div id="modal" class="modal">
-			<span id="modal-close" class="modal-close"></span>
-			<div class="modal-header">Оформить заказ</div>
-			<div class="modal-body">
-				<div class="modal__phone">8 (499) 348-84-49</div>
-				<div class="btn">
-					<a href="tel:+7495000069" class="btn__link">Круглосуточно без выходных</a>
-				</div>
-				<div class="modal__desc">Звоните, подберем вариант<br />Бесплатно проконсультируем</div>
+		<section class="section1">
+			<header class="header">
+				<a href="/" class="header__logo">
+					<img class="header__logo-img" src="img/logo.svg" alt="">
+				</a>
+				<nav class="header__nav">
+					<a href="#" class="header__nav-link ui-link">Services</a>
+					<a href="#" class="header__nav-link ui-link">Our Process</a>
+					<a href="#" class="header__nav-link ui-link">Team</a>
+					<a href="#" class="header__nav-link ui-link">About Us</a>
+					<a href="#" class="header__nav-link ui-link">Contact Us</a>
+				</nav>
+			</header>
+			<div class="section1__imgwrap">
+				<img class="section1__img" src="img/slide1_static-img.jpg" alt="">
 			</div>
-		</div>
-		<div class="header">
-			<div class="header-wrap inner">
-				<div class="header-content">
-					<a href="/" class="header-logo">
-						<img class="header-logo__img" src="img/logo.svg" width="151" height="48" alt="Вывоз мусора" />
-					</a>
-					<input class="menu__toggle" id="menu__toggle" type="checkbox" />
-					<label class="menu__btn" for="menu__toggle">
-						<span></span>
-					</label>
-					<ul class="header-nav">
-						<li><a href="#">Строительный мусор</a></li>
-						<li><a href="#">Контейнеры</a></li>
-						<li><a href="#">Грузчики</a></li>
-						<li><a href="#">Вывоз из квартиры</a></li>
-					</ul>
-				</div>
-				<div class="header__btn btn">
-					<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-					<div class="btn__desc">Звоните для заказа</div>
-				</div>
+			<div class="section1__title title-h1">Drive Business<br>Impact with Bold<br>Strategic Vision</div>
+		</section>
+		<section class="section2">
+			<div class="section2__title title-h1">AMPLIFY YOUR BUSINESS</div>
+			<ul class="section2-list">
+				<li class="section2-list__item">
+					<div class="section2-list__item-bg"></div>
+					<div class="section2-list__item-head">
+						<div class="section2-list__item-number ui-link">01</div>
+						<div class="section2-list__item-title title-h3">Revenue Focused Business Decisions</div>
+					</div>
+					<div class="section2-list__item-text text">We maximize value to your bottom line  by deeply understanding your business’s needs before we go to work.</div>
+				</li>
+				<li class="section2-list__item">
+					<div class="section2-list__item-bg"></div>
+					<div class="section2-list__item-head">
+						<div class="section2-list__item-number ui-link">02</div>
+						<div class="section2-list__item-title title-h3">Cutting Edge Software Solutions</div>
+					</div>
+					<div class="section2-list__item-text text">Our highly skilled network of software developers, product managers  & business analysts have experience growing some of the worlds largest and most impactful software companies.</div>
+				</li>
+				<li class="section2-list__item">
+					<div class="section2-list__item-bg"></div>
+					<div class="section2-list__item-head">
+						<div class="section2-list__item-number ui-link">03</div>
+						<div class="section2-list__item-title title-h3">Data Powered Innovation</div>
+					</div>
+					<div class="section2-list__item-text text">Let us pilot your business to the next level using deep business insights, opportunity sizing, product portfolio expansions, human-centered design  and continuous innovation.</div>
+				</li>
+			</ul>
+		</section>
+		<section class="section3">
+			<div class="section3__title title-h1">Our Process</div>
+			<div class="section3__animate-wrap"></div>
+			<div class="section3__bg-wrap">
+				<img class="section3__bg-img" src="img/slide3_bg.jpg" alt="">
 			</div>
-		</div>
- 		<div class="calc section">
-			<div class="calc__name">Вывоз мусора в Москве и области</div>
-			<div class="calc-wrap">
-				<div class="calc-form">
-					<div class="calc-form__name">Расчет цены за вывоз</div>
-					<label for="calc-type">Выберите тип мусора</label>
-					<select id="calc-type"></select>
-					<label for="calc-district">Выберите округ</label>
-					<select id="calc-district"></select>
-					<label for="calc-vol">Выберите объем</label>
-					<select id="calc-vol"></select>
-					<label for="calc-count">Выберите количество</label>
-					<select id="calc-count"></select>
-					<label class="checkbox">
-						<input id="calc-loading" type="checkbox" name="loading">
-						<span>Погрузка</span>
-					</label>
-					<div class="technics-item__btn btn btn_large">
-						<span id="calc-btn" class="btn__link">Рассчитать цену</span>
-					</div>
-					<div id="calc-pricewrap" class="calc-pricewrap">
-						<div class="calc__price">Итого: <span id="calc-price"></span>&nbsp;руб.</div>
-						<div class="calc-pricewrap__text">Звоните для заказа</div>
-						<div class="calc-pricewrap__phone">8 (499) 348-84-49</div>
-					</div>
-				</div>
-				<div class="calc-content">
-					<img class="calc__img" src="img/kamaz-large.jpg" width="688" height="491" alt="">
-					<div class="calc-content-pricewrap">
-						<div class="calc-content__price">8 м3 - 10000 руб.</div>
-						<div class="calc-content__price">20 м3 - 19000 руб.</div>
-						<div class="calc-content__price">27 м3 - 22000 руб.</div>
-					</div>
-					<a href="#price-moscow" class="section-linkwrap__link">Цена на вывоз мусора по округам</a>
-				</div>
+		</section>
+		<section class="section4">
+			<div class="section4-running-wrap">
+				<div class="section4__running-1 section4__running title-h2">game development consulting&nbsp;&nbsp;&bull;&nbsp;&nbsp;creates end-to-end solutions&nbsp;&nbsp;&bull;&nbsp;&nbsp;Data Powered Innovation</div>
+				<div class="section4__running-2 section4__running title-h2">game development consulting&nbsp;&nbsp;&bull;&nbsp;&nbsp;creates end-to-end solutions&nbsp;&nbsp;&bull;&nbsp;&nbsp;Data Powered Innovation</div>
 			</div>
-		</div>
-		<div class="infographic section section-list-row">
-			<div class="section-list-row-content">
-				<div class="section-list-row-item icon-track24">
-					<div class="section-list-row-item__name">Быстро</div>
-					<div class="section-list-row-item__text">Привезем или вывезем контейнер в течение одного дня</div>
-				</div>
-				<div class="section-list-row-item icon-calendar">
-					<div class="section-list-row-item__name">Точно в сроки</div>
-					<div class="section-list-row-item__text">Приедем точно по графику, независимо от погоды или дорожных пробок</div>
-				</div>
-				<div class="section-list-row-item icon-money">
-					<div class="section-list-row-item__name">Выгодно</div>
-					<div class="section-list-row-item__text">Вы оплачиваете стоимость услуги по договору, цена остается не изменной</div>
-				</div>
-				<div class="section-list-row-item icon-loader">
-					<div class="section-list-row-item__name">Услуги грузчиков</div>
-					<div class="section-list-row-item__text">Поможем погрузить в бункеры ТБО или строительный мусор в любых объемах</div>
-				</div>
-			</div>
-		</div>
-		<div id="price-moscow" class="price-moscow-table section section-table">
-			<div class="section__name_small">Цена на вывоз мусора по округам Москвы</div>
-			<div class="table">
-				<div class="table-header">
-					<div class="table-header__cell table-header__cell_name"></div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_8.jpg" loading="lazy" alt="" />
-						<div>Контейнер 8 м3</div>
-					</div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_20.jpg" loading="lazy" alt="" />
-						<div>Контейнер 20 м3</div>
-					</div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_27.jpg" loading="lazy" alt="" />
-						<div>Контейнер 27 м3</div>
-					</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Центр:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Юго-Восток:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Юг:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Юго-Запад:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Север:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Северо-Восток:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Восток:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Запад:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Северо-Запад:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Новая Москва:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-footer">
-					<div><span>Грузчики 8&nbsp;м3 - 2&nbsp;человека - 3000&nbsp;руб., 20&nbsp;м3 - 3&nbsp;человека 7000&nbsp;руб.</span></div>
-				</div>
-			</div>
-			<div class="section-linkwrap">
-				<a href="#type" class="section-linkwrap__link">Цена по типу мусора</a>
-				<div class="btn">
-					<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-				</div>
-			</div>
-		</div>
-		<div class="seo section">
-			<div class="section__name_small">Сеошное описание</div>
-			<div class="seo-content">
-				<p>Компания оказывает вывоз мусора контейнером 8 кубов в Москве. Подобная тара может применяться в твердых бытовых, строительных отходов, крупногабаритных предметов и металлолома</p>
-				<p>Характеристики грузовой техники:</p>
-				<p>Восьми кубовый мусорный контейнер имеет следующие размеры:</p>
-				<ul>
-					<li>длина: 3,4 м;</li>
-					<li>ширина: 1,9 м;</li>
-					<li>высота: 1,5 м.</li>
-				</ul>
-				<p>Эти параметры нужно принимать во внимание при заказе вывоза строительного или крупного мусора контейнером 8 м3. Масса пустого бункера составляет 0,5 тонны. Бункеры производят из стали с толщиной стенки 3 мм, они устойчивы к появлению коррозии и перепадам температур. Такие емкости обладают высокой прочностью, могут эксплуатироваться в различных условиях. Емкость устанавливается на автомобили мусоровозы на базе автомобилей МАЗ, КАМАЗ. Автотранспорт оборудуют задними и боковыми захватными механизмами. Это позволяет упростить проведение погрузочно-разгрузочных операций.
-				<p>Преимущества грузовой техники:</p>
-				<p>Контейнерные грузоперевозки имеют следующие преимущества:</p>
-				<ul>
-					<li>универсальность, возможность использования для отходов любой категории, подходящих по объему и массе;</li>
-					<li>компактные размеры, возможность загрузки в контейнер 8 м3 до 5 тонн в ограниченном пространстве (на дворовых территориях; площадках перед торговыми точками) читать дальше</li>
-				</ul>
-			</div>
-		</div>
-		<div id="type" class="price-table section section-table">
-			<div class="section__name_small">Цена на вывоз мусора по типу мусора</div>
-			<div class="table">
-				<div class="table-header">
-					<div class="table-header__cell table-header__cell_name"></div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_8.jpg" loading="lazy" alt="" />
-						<div>Контейнер 8 м3</div>
-					</div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_20.jpg" loading="lazy" alt="" />
-						<div>Контейнер 20 м3</div>
-					</div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_27.jpg" loading="lazy" alt="" />
-						<div>Контейнер 27 м3</div>
-					</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Строительный:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Крупногабарит:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Бытовой:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Смешанный:</div>
-					<div class="table__cell">7 800 руб.</div>
-					<div class="table__cell">18 180 руб.</div>
-					<div class="table__cell">20 200 руб.</div>
-				</div>
-				<div class="table-footer">
-					<div><span>Грузчики 8&nbsp;м3 - 2&nbsp;человека - 3000&nbsp;руб., 20&nbsp;м3 - 3&nbsp;человека 7000&nbsp;руб.</span></div>
-				</div>
-			</div>
-			<div class="section-linkwrap">
-				<a href="#questions" class="section-linkwrap__link">Возникающие вопросы</a>
-				<div class="btn">
-					<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-				</div>
-			</div>
-		</div>
-		<div class="price section section-container">
-			<div class="section__name_small">Цена на вывоз мусора по типу мусора</div>
-			<div class="section-container-content">
-				<div class="section-container-imgwrap">
-					<img class="section-container__img" src="img/container.jpg" loading="lazy" alt="" />
-				</div>
-				<div class="section-container-text">
-					<div class="section-container-text__name">Контейнер 20 м3</div>
-					<div class="price-desc">
-						<div class="price-desc-box">Типы вывозимого мусора:</div>
-						<div class="price-desc-box_row">
-							<div class="grey">Строительный</div>
-							<div>18 180 руб.</div>
-						</div>
-						<div class="price-desc-box_row">
-							<div class="grey">Крупногабарит</div>
-							<div>17 820 руб.</div>
-						</div>
-						<div class="price-desc-box_row">
-							<div class="grey">Бытовой</div>
-							<div>18 000 руб.</div>
-						</div>
-						<div class="price-desc-box_row">
-							<div class="grey">Смешанный</div>
-							<div>17 640 руб.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section-linkwrap">
-				<a href="#questions" class="section-linkwrap__link">Возникающие вопросы</a>
-				<div class="btn">
-					<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-				</div>
-			</div>
-		</div>
-		<div id="comments" class="comments section">
-			<div class="section__name">Отзывы клиентов</div>
-			<div id="comments-wrap" class="comments-list">
-				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
-					<audio controls preload="none">
-						<source src="audio/1.mp3" type="audio/mpeg" />
-					</audio>
-					<div class="comments__item-textwrap">
-						<div class="comments__item-name" itemprop="name"></div>
-						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text"></div>
-					</div>
-				</div>
-				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
-					<audio controls preload="none">
-						<source src="audio/1.mp3" type="audio/mpeg" />
-					</audio>
-					<div class="comments__item-textwrap">
-						<div class="comments__item-name" itemprop="name"></div>
-						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text"></div>
-					</div>
-				</div>
-				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
-					<audio controls preload="none">
-						<source src="audio/1.mp3" type="audio/mpeg" />
-					</audio>
-					<div class="comments__item-textwrap">
-						<div class="comments__item-name" itemprop="name"></div>
-						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text"></div>
-					</div>
-				</div>
-				<div class="comments__item" itemscope itemtype="http://schema.org/AudioObject">
-					<audio controls preload="none">
-						<source src="audio/1.mp3" type="audio/mpeg" />
-					</audio>
-					<div class="comments__item-textwrap">
-						<div class="comments__item-name" itemprop="name"></div>
-						<meta itemprop="description" content="Отзыв о работе Галина, М.">
-						<div class="comments__item-text"></div>
-					</div>
-				</div>
-			</div>
-			<div class="comments-linkwrap">
-				<a href="#" class="comments__link">Посмотреть все отзывы</a>
-			</div>
-		</div>
-		<div class="technics section">
-			<div class="section__name">Парк техники</div>
-			<div class="technics-wrap">
-				<div class="technics-item">
-					<img class="technics-item__img" src="img/kamaz_8.jpg" loading="lazy" alt="" />
-					<a href="#" class="technics-item__name">Камаз 8 м3</a>
-					<div class="technics-item__list">
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Вызов</span>
-							<span>6 000 руб.</span>
-						</div>
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Погрузка</span>
-							<span>3 000 руб.</span>
-						</div>
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Аренда</span>
-							<span>1 000 руб.</span>
-						</div>
-					</div>
-					<div class="technics-item__btn btn btn_large">
-						<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-					</div>
-				</div>
-				<div class="technics-item">
-					<img class="technics-item__img" src="img/kamaz_20.jpg" loading="lazy" alt="" />
-					<a href="#" class="technics-item__name">Камаз 20 м3</a>
-					<div class="technics-item__list">
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Вызов</span>
-							<span>6 000 руб.</span>
-						</div>
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Погрузка</span>
-							<span>3 000 руб.</span>
-						</div>
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Аренда</span>
-							<span>1 000 руб.</span>
-						</div>
-					</div>
-					<div class="technics-item__btn btn btn_large">
-						<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-					</div>
-				</div>
-				<div class="technics-item">
-					<img class="technics-item__img" src="img/kamaz_27.jpg" loading="lazy" alt="" />
-					<a href="#" class="technics-item__name">Камаз 27 м3</a>
-					<div class="technics-item__list">
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Вызов</span>
-							<span>6 000 руб.</span>
-						</div>
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Погрузка</span>
-							<span>3 000 руб.</span>
-						</div>
-						<div class="technics-item__text">
-							<span class="technics-item__text-desc">Аренда</span>
-							<span>1 000 руб.</span>
-						</div>
-					</div>
-					<div class="technics-item__btn btn btn_large">
-						<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="scheme section section-list-row">
-			<div class="section__name">Схема работы</div>
-			<div id="scheme-wrap" class="section-list-row-content">
-				<div class="section-list-row-item icon-document"></div>
-				<div class="section-list-row-item icon-track"></div>
-				<div class="section-list-row-item icon-tools"></div>
-				<div class="section-list-row-item icon-delivery"></div>
-			</div>
-		</div>
-		<div id="filling" class="filling-table section section-table">
-			<div class="section__name_small">Наполнение контейнеров</div>
-			<div class="table">
-				<div class="table-header">
-					<div class="table-header__cell table-header__cell_name"></div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_8.jpg" loading="lazy" alt="" />
-						<div>Контейнер 8 м3</div>
-					</div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_20.jpg" loading="lazy" alt="" />
-						<div>Контейнер 20 м3</div>
-					</div>
-					<div class="table-header__cell">
-						<img class="table-header__img" src="img/icon-cont_27.jpg" loading="lazy" alt="" />
-						<div>Контейнер 27 м3</div>
-					</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Габариты (Д, Ш, В):</div>
-					<div class="table__cell">3,5м., 2м., 1,5м.</div>
-					<div class="table__cell">4,5м., 2,5м., 2,5м.</div>
-					<div class="table__cell">5,5м., 2,5м., 2,5м.</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Тоннаж:</div>
-					<div class="table__cell">4 тонны</div>
-					<div class="table__cell">12 тонн</div>
-					<div class="table__cell">16 тонн</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Вместимость:</div>
-					<div class="table__cell">120 мешков</div>
-					<div class="table__cell">240 мешков</div>
-					<div class="table__cell">360 мешков</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Бытовой мусор:</div>
-					<div class="table__cell">90% загрузка</div>
-					<div class="table__cell">80% загрузка</div>
-					<div class="table__cell">90% загрузка</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Строймусор:</div>
-					<div class="table__cell">90% загрузка</div>
-					<div class="table__cell">80% загрузка</div>
-					<div class="table__cell">90% загрузка</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Крупногабарит:</div>
-					<div class="table__cell">90% загрузка</div>
-					<div class="table__cell">80% загрузка</div>
-					<div class="table__cell">90% загрузка</div>
-				</div>
-				<div class="table-row">
-					<div class="table__cell table__cell_name">Смешанные:</div>
-					<div class="table__cell">90% загрузка</div>
-					<div class="table__cell">80% загрузка</div>
-					<div class="table__cell">90% загрузка</div>
-				</div>
-				<div class="table-footer">
-					<div><span>Грузчики 8&nbsp;м3 - 2&nbsp;человека - 3000&nbsp;руб., 20&nbsp;м3 - 3&nbsp;человека 7000&nbsp;руб.</span></div>
-				</div>
-			</div>
-			<div class="section-linkwrap">
-				<a href="#questions" class="section-linkwrap__link">Возникающие вопросы</a>
-				<div class="btn">
-					<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-				</div>
-			</div>
-		</div>
-		<div class="filling section section-container">
-			<div class="section__name_small">Наполнение контейнеров</div>
-			<div class="section-container-content">
-				<div class="section-container-imgwrap">
-					<img class="section-container__img" src="img/container.jpg" loading="lazy" alt="" />
-					<div class="section-container-price">20 м3-19000 руб., без учета грузчиков</div>
-				</div>
-				<div class="section-container-text">
-					<div class="section-container-text__name">Контейнер 20 м3</div>
-					<div class="filling-desc">
-						<div class="filling-desc-box">
-							<div class="filling-desc__name">Габариты:</div>
-							<div>
-								<div class="filling-desc__str"><span class="grey">Длина</span>&nbsp;6.2м, </div>
-								<div class="filling-desc__str"><span class="grey">Ширина</span>&nbsp;2.5м, </div>
-								<div class="filling-desc__str"><span class="grey">Высота</span>&nbsp;1.9м</div>
+			<div class="section4-slider">
+				<div class="section4-sliderwrap">
+					<div class="section4-slider__item">
+						<div class="section4-slider__item-left">
+							<img class="section4-slider__item-img" src="img/person1.png" alt="">
+							<div class="section4-slider__item-name title-h1">Alexander<br>Ronalds</div>
+							<div class="section4-slider__item-logowrap">
+								<img class="section4-slider__item-logo logo_facebook" src="img/logo_facebook.svg" alt="Facebook">
+								<img class="section4-slider__item-logo logo_amazon" src="img/logo_amazon.svg" alt="Amazon">
+								<img class="section4-slider__item-logo logo_twitch" src="img/logo_twitch.svg" alt="Twitch">
+								<img class="section4-slider__item-logo logo_kabam" src="img/logo_kabam.svg" alt="Kabam">
 							</div>
 						</div>
-						<div class="filling-desc-box filling-desc-box_small">
-							<div class="filling-desc__name">Тоннаж:</div>
-							<div class="filling-desc__str"><span class="grey">до</span>&nbsp;16&nbsp;тонн</div>
-						</div>
-						<div class="filling-desc-box filling-desc-box_small">
-							<div class="filling-desc__name">Вместимость:</div>
-							<div class="filling-desc__str">420&nbsp;<span class="grey">мешков</span></div>
-						</div>
-						<div class="filling-desc-box">
-							<div class="filling-desc__name">Проценты наполнения:</div>
-							<div class="filling-desc__str">100%&nbsp;<span class="grey">бытовой,</span> </div>
-							<div class="filling-desc__str">90%&nbsp;<span class="grey">крупногабарит,</span> </div>
-							<div class="filling-desc__str">70%&nbsp;<span class="grey">строймусор</span></div>
+						<div class="section4-slider__item-right">
+							<div class="section4-slider__item-desc text">
+								<p class="text">Alex Ronalds is the chief executive officer & co-founder of Argine Consulting, a business consulting firm that helps companies drive business impact through continuous innovation.</p>
+								<p class="text">Previously Alex created Amazon / Twitch’s flagship Pulse product which launched on the front page of Twitch.tv to 100s of millions of gamers creating a new type of social discourse amongst them. Prior to that Alex managed Facebook’s multi-Billion dollar web gaming business, an ecosystem for developers to upload their own games & apps giving them a way to leverage Facebook’s viral distribution. Most notable however Alex built & sold Balanced Worlds to Kabam, an industry leader in the social gaming space, who was later wholly acquired by Netmarble for 800 million dollars.</p>
+								<p class="text">Alex is passionate about anthropology & games and in his spare time runs a non-profit geared towards recording the rich cultural history of an entirely new generation of gamers, Clanet.</p>
+							</div>
+							<div class="section4-slider__item-rankwrap">
+								<span class="section4-slider__item-rank-number ui-link">01</span>
+								<span class="section4-slider__item-rank ui-link">CEO</span>
+							</div>
 						</div>
 					</div>
+					<div class="section4-slider__item">
+						<div class="section4-slider__item-left">
+							<img class="section4-slider__item-img" src="img/person1.png" alt="">
+							<div class="section4-slider__item-name title-h1">Daniil<br>Demchenko</div>
+						</div>
+						<div class="section4-slider__item-right">
+							<div class="section4-slider__item-desc text">
+								<p class="text">Alex Ronalds is the chief executive officer & co-founder of Argine Consulting, a business consulting firm that helps companies drive business impact through continuous innovation.</p>
+								<p class="text">Previously Alex created Amazon / Twitch’s flagship Pulse product which launched on the front page of Twitch.tv to 100s of millions of gamers creating a new type of social discourse amongst them. Prior to that Alex managed Facebook’s multi-Billion dollar web gaming business, an ecosystem for developers to upload their own games & apps giving them a way to leverage Facebook’s viral distribution. Most notable however Alex built & sold Balanced Worlds to Kabam, an industry leader in the social gaming space, who was later wholly acquired by Netmarble for 800 million dollars.</p>
+								<p class="text">Alex is passionate about anthropology & games and in his spare time runs a non-profit geared towards recording the rich cultural history of an entirely new generation of gamers, Clanet.</p>
+							</div>
+							<div class="section4-slider__item-rankwrap">
+								<div class="section4-slider__item-rank-number ui-link">02</div>
+								<div class="section4-slider__item-rank ui-link">Technical director</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section4-slider-nav">
+					<span class="section4-slider-nav__prev section4-slider-nav__arrow section4-slider-nav__arrow_disable"></span>
+					<span class="section4-slider-nav__next section4-slider-nav__arrow"></span>
 				</div>
 			</div>
-			<div class="section-linkwrap">
-				<a href="#filling" class="section-linkwrap__link">Наполнение контейнеров</a>
-				<div class="btn">
-					<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
+		</section>
+		<section class="section5">
+			<div class="section5-content">
+				<div class="section5__title title-h2">Argine Consulting is a game development consulting company that creates end-to-end solutions</div>
+				<div class="section5__text text">
+					<p class="text">Argine Consulting is a game development consulting company that creates end-to-end solutions for developers and publishers around  the world. Our experienced team works with world class gaming companies on product, design, development, management and monetization solutions. Using our proprietary LoopStats™ database, we can provide the most in depth monetization strategies for your products.</p>
+					<p class="text">We are dedicated to helping video game development studios improve their processes, reduce production times, and improve product quality.  At the same time, we’re uniquely able to give you the monetization data you need with our LoopStats™ technology.</p>
 				</div>
 			</div>
-		</div>
-		<div class="types section section-list">
-			<div class="section__name_small">Типы вывозимого мусора</div>
-			<div id="types-wrap" class="section-list-content">
-				<div class="section-list__item types__item_buildings"></div>
-				<div class="section-list__item types__item_solid"></div>
-				<div class="section-list__item types__item_large"></div>
-				<div class="section-list__item types__item_mix"></div>
+			<div class="section5__bg-wrap">
+				<img class="section5__bg-img" src="img/slide5_bg.jpg" alt="">
 			</div>
-			<div class="types-btnwrap">
-				<a href="#">Строительный мусор</a>
-				<a href="#">Строительный мусор</a>
-				<a href="#">Грузчики</a>
-				<a href="#">Вызов из квартиры</a>
+			<div class="section5__animate-wrap"></div>
+		</section>
+		<section class="section6">
+			<div class="section6__bg-wrap">
+				<img class="section6__bg-img" src="img/slide6_bg.jpg" alt="">
 			</div>
-		</div>
-		<div class="order section">
-			<div class="order-wrap">
-				<img class="order__img" src="img/operator.jpg" loading="lazy" alt="Оформить заказ" />
-				<div class="order-content">
-					<div class="order__name section__name">Оформить заказ</div>
-					<div class="order__text">Круглосуточно, без выходных</div>
-					<div class="order__phone">+7 (499) 000-10-01</div>
-					<div class="order__text">Звоните подберем оптимальный вариант и бесплатную консультацию</div>
-					<a href="#calc" class="order__btn">Калькулятор</a>
-				</div>
+			<div class="section6-content">
+				<div class="section6__title title-h1">Contact us</div>
+				<form action="#" class="section6__form">
+					<input class="form__input" type="text" placeholder="Name">
+					<input class="form__input" type="text" placeholder="E-mail">
+					<textarea class="form__textarea" placeholder="Message"></textarea>
+					<button class="form__btn" type="submit">Send message</button>
+				</form>
 			</div>
-		</div>
-		<div id="questions" class="questions section section-list">
-			<div class="section__name">Возникающие вопросы</div>
-			<div id="questions-wrap" class="section-list-content">
-				<div class="section-list__item">
-					<div class="red">Как можно сэкономить?</div>
-					<span>Посмотрите тарифы на вывоз малотоннажным транспортом. Цены в несколько раз дешевле.</span>
-				</div>
-			</div>
-		</div>
-		<div class="services section">
-			<div class="section__name">Оказываемые услуги</div>
-			<div class="services-content">
-				<div class="services__cell">
-					<div>
-						<img src="img/services_1.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Вызов строительного мусора</a>
-				</div>
-				<div class="services__cell">
-					<div>
-						<img src="img/services_2.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Бункер для мусора</a>
-				</div>
-				<div class="services__cell">
-					<div>
-						<img src="img/services_3.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Пухто для мусора</a>
-				</div>
-				<div class="services__cell">
-					<div>
-						<img src="img/services_4.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Аренда контейнера</a>
-				</div>
-				<div class="services__cell">
-					<div>
-						<img src="img/services_5.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Вызов строительного мусора</a>
-				</div>
-				<div class="services__cell">
-					<div>
-						<img src="img/services_6.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Бункер для мусора</a>
-				</div>
-				<div class="services__cell">
-					<div>
-						<img src="img/services_7.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Пухто для мусора</a>
-				</div>
-				<div class="services__cell">
-					<div>
-						<img src="img/services_8.jpg" loading="lazy" alt="" />
-					</div>
-					<a href="#">Аренда контейнера</a>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
+		</section>
+		<footer class="footer">
 			<div class="footer-top">
-				<div class="footer-top-wrap inner">
-					<a href="/" class="footer-logo">
-						<img class="footer-logo__img" src="img/logo.svg" alt="Вывоз мусора" />
-					</a>
-					<div class="footer-desc">Обращаем Ваше внимание на то, что информация, размещенная на сайте, носит исключительно информационно-рекламный характер, и не является офертой или публичной офертой в соответствии со статьей 435 и пунктом 2 статьи 437 Гражданского кодекса Российской Федерации.</div>
-					<div class="footer__btn btn">
-						<a href="tel:+7495000069" class="btn__link">+7 (495) 00-00-69</a>
-						<div class="btn__desc">Звоните для заказа</div>
-					</div>
+				<a href="/" class="footer__logo">
+					<img class="footer__logo-img" src="img/logo.svg" alt="">
+				</a>
+				<nav class="footer__nav">
+					<a href="#" class="footer__nav-link ui-link">Services</a>
+					<a href="#" class="footer__nav-link ui-link">Customer Stories</a>
+					<a href="#" class="footer__nav-link ui-link">About Us</a>
+					<a href="#" class="footer__nav-link ui-link">Contact Us</a>
+				</nav>
+			</div>
+			<div class="footer-bottom desc">
+				<div class="footer__copy">© 2016 Argine Consulting. All Rights Reserved.</div>
+				<div class="footer__rules">
+					<a href="#" class="footer__rules-link">Privacy Policy</a>
+					<span class="footer__rules-text">&nbsp;/&nbsp;</span>
+					<a href="#" class="footer__rules-link"> Terms of Use</a>
 				</div>
 			</div>
-			<div class="footer-bottom">
-				<div class="footer-bottom-wrap inner">
-					<div class="footer-bottom__col">
-						<a href="#">Вывоз боя кирпича</a>
-						<a href="#">Вывоз боя бетона и ЖБИ</a>
-						<a href="#">Вывоз асфальтового скола</a>
-						<a href="#">Вывоз старой мебели</a>
-						<a href="#">Вывоз дивана</a>
-						<a href="#">Вывоз пианино</a>
-						<a href="#">Вывоз окон</a>
-						<a href="#">Вывоз снега</a>
-						<a href="#">Вывоз снего с погрузкой</a>
-					</div>
-					<div class="footer-bottom__col">
-						<a href="#">Вывоз снега с территории</a>
-						<a href="#">Вывоз снега самосвалами</a>
-						<a href="#">Вывоз ТКО</a>
-						<a href="#">Вывоз ТБО</a>
-						<a href="#">Вывоз ГКМ</a>
-						<a href="#">Вывоз мукалатуры</a>
-						<a href="#">Вывоз деревья</a>
-						<a href="#">Строительные отходы</a>
-						<a href="#">Крупногабаритные предметы</a>
-						<a href="#">Вывоз отходов производства</a>
-						<a href="#">Вывоз хлама</a>
-					</div>
-					<div class="footer-bottom__col">
-						<a href="#">Вывоз мусора после ремонта</a>
-						<a href="#">Вывоз мусора в мешках</a>
-						<a href="#">Вывоз мусора после демонтажа</a>
-						<a href="#">Бункер для вывоза мусора</a>
-						<a href="#">Вывоз мусора из квартиры</a>
-						<a href="#">Вывоз мусора с грузчиками</a>
-						<a href="#">Вывоз мусора на газели</a>
-						<a href="#">Вывоз мусора пухто</a>
-						<a href="#">Вывоз мусора из офиса</a>
-						<a href="#">Вывоз мусора из частного сектора</a>
-						<a href="#">Вывоз мусора из гаража</a>
-						<a href="#">Вывоз мусора с дачи</a>
-						<a href="#">Вывоз мусора после пожара</a>
-					</div>
-					<div class="footer-bottom__col">
-						<a href="#">Контейнер для мусора</a>
-						<a href="#">Вывоз мусора контейнером</a>
-						<a href="#">Аренда мусорного контейнера</a>
-						<a href="#">Контейнер 8 м3, до 4 тонн</a>
-						<a href="#">Контейнер 20 м3, до 12 тонн</a>
-						<a href="#">Контейнер 27 м3, до 14 тонн</a>
-						<a href="#">Контейнер 8-27 м3</a>
-						<a href="#">Контейнеры</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/data.js"></script>
+		</footer>
+		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
