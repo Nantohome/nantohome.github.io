@@ -238,6 +238,7 @@ p.text{
 	justify-content:center;
 	align-items:flex-start;
 	height:100%;
+	width:750rem;
 	margin-left:390rem;
 	color:var(--white);
 	z-index:40;
@@ -266,6 +267,10 @@ p.text{
 .header__logo-img{
 	width:100%;
 	object-fit:contain;
+}
+.header__burger,
+.header__input{
+	display:none;
 }
 .header__nav{
 	display:flex;
