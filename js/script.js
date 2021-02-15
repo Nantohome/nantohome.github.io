@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on("load", function(){
 	
 	$(".section4__running").marquee({
 		duration: 10000,
@@ -7,5 +7,4 @@ $(document).ready(function(){
 		duplicated: true,
 		startVisible: true
 	});
-
 });

@@ -152,31 +152,31 @@
 /******************************************************************************
 	Section 2
 ******************************************************************************/
-.section2{
-	padding:170rem 0 137rem;
-}
-.section2__title{
-	margin:0 18rem 83rem 17rem;
-}
-.section2-list{
-	flex-flow:column nowrap;
-	justify-content:flex-start;
-	align-items:flex-start;
-	padding:0 17rem 0 18rem;
-}
-.section2-list__item{
-	margin-bottom:55rem;
-}
-.section2-list__item:last-child{
-	margin-bottom:0;
-}
-.section2-list__item:hover .section2-list__item-bg{
-	display:none;
-}
-.section2-list__item:hover .section2-list__item-title,
-.section2-list__item:hover .section2-list__item-text{
-	color:var(--black);
-}
+	.section2{
+		padding:170rem 0 137rem;
+	}
+	.section2__title{
+		margin:0 18rem 83rem 17rem;
+	}
+	.section2-list{
+		flex-flow:column nowrap;
+		justify-content:flex-start;
+		align-items:flex-start;
+		padding:0 17rem 0 18rem;
+	}
+	.section2-list__item{
+		margin-bottom:55rem;
+	}
+	.section2-list__item:last-child{
+		margin-bottom:0;
+	}
+	.section2-list__item:hover .section2-list__item-bg{
+		display:none;
+	}
+	.section2-list__item:hover .section2-list__item-title,
+	.section2-list__item:hover .section2-list__item-text{
+		color:var(--black);
+	}
 
 /******************************************************************************
 	Section 3
