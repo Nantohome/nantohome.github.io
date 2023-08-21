@@ -1,0 +1,2 @@
+.block34 ul{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;z-index:1}.block34 ul li{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding:30px;background:var(--color-white-80)}.block34 ul li:hover{transform:scale(.97)}.block34 ul li:hover .info .h3{color:var(--color-text-hover)}.block34 ul li .info{flex:1 1 auto}.block34 ul li .info .desc{padding:10px 0 0;line-height:24px}.block34 ul li .info a.btn{margin:10px 0 0}.block34 ul li .img{max-width:42%;min-width:42%}
+/*# sourceMappingURL=block34.min.css.map */
