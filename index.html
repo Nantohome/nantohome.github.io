@@ -1,554 +1,123 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
-  <title>Карточка продукта</title>    
-  <link rel="stylesheet" href="theme/css/app.min.css">
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
+	<style>
+*{box-sizing:border-box}
+body{margin:0;padding:0}
+a[x-apple-data-detectors]{color:inherit!important;text-decoration:inherit!important}
+#MessageViewBody a{color:inherit;text-decoration:none}
+p{line-height:inherit}
+.desktop_hide,.desktop_hide table{mso-hide:all;display:none;max-height:0;overflow:hidden}
+.image_block img+div{display:none}
+	</style>
 </head>
-<body>
-<section class="loader" data-loader>
-  <div class="logo">
-    <img src="theme/img/logo_gray.svg" alt="">
-    <img src="theme/img/logo.svg" alt="">
-  </div>
-</section>
+<body style="text-size-adjust:none;background-color:#000;margin:0;padding:0;box-sizing:border-box;">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+		<tr>
+			<td align="center" valign="top" width="100%" height="100%">
+				<table class="row header" style="mso-table-lspace:0;mso-table-rspace:0;max-width:600px;width: 100%;margin:0 auto;" border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+					<tr>
+						<td width="100%">
+							<a href="#" style="display: block; width:100%; background-color: #000000;" target="_blank" style="outline:none" tabindex="-1">
+								<img src="https://img.us12.besteml.com/en/v5/user-files?userId=5785501&resource=himg&disposition=inline&name=6uyo9kiqfoibw5ihgra41uxrsdk6nrrodoetytekfwj1wm75p591u9f88j998q411uhboehf3ikk4madwu8is79d7hw" style="height:auto;display:block;border:0;max-width:600px;width:100%;" alt="atom" title="atom" width="600">
+							</a>
+						</td>
+					</tr>
+				</table>
+				<table class="row body" style="mso-table-lspace:0;mso-table-rspace:0;max-width:600px; width: 100%;margin:0 auto;background-color:#000;background-image:url('https://img.us12.besteml.com/en/v5/user-files?userId=5785501&resource=himg&disposition=inline&name=6pm4mxfyrkohutihgra41uxrsdk6nrrodoetyteer87fjmei9tdegm7mq7wbs3rbgr7iktiuqmy15y');background-position:0 0;background-repeat:no-repeat;background-size:cover;" border="0" cellspacing="0" cellpadding="0" width="600" align="center">
+					<tr>
+						<td width="100%" height="50"></td>
+					</tr>
+					<tr>
+						<td width="100%" align="center">
+							<table class="row" style="mso-table-lspace:0;mso-table-rspace:0;max-width:430px; width: 100%;margin:0 auto;background-color:transparent;background-image:url('https://img.us12.besteml.com/en/v5/user-files?userId=5785501&resource=himg&disposition=inline&name=6i1o7xa6h7ws5tihgra41uxrsdk6nrrodoetytepuzo6buduupszbs84pwouc1xmxoojk5ypkhctp7949oi6h9tkpmw');background-position:0 0;background-repeat:no-repeat;background-size:100% 100%" border="0" cellspacing="0" cellpadding="0" width="430" align="center">
+								<tr>
+									<td width="100%" height="16"></td>
+								</tr>
+								<tr>
+									<td width="100%" style="padding:0 32px;color: rgba(255, 255, 255, 0.80);text-align: left;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 16px;font-style: normal;font-weight: 600;line-height: 125%;" align="left">Подарочный сертификат с электронным ключом АТОМ – во вложении к этому письму.</td>
+								</tr>
+								<tr>
+									<td width="100%" height="20"></td>
+								</tr>
+								<tr>
+									<td width="100%" style="padding:0 32px;color: rgba(255, 255, 255, 0.80);text-align: left;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 14px;font-style: normal;font-weight: 300;line-height: 125%;" align="left">Для завершения бронирования новому владельцу подарочного сертификата необходимо активировать ключ на странице <a href="https://order.atom.auto/activate" style="color:#fff">order.atom.auto/activate</a> и пройти быструю регистрацию. После регистрации электронный ключ АТОМ будет доступен владельцу в личном кабинете, где можно следить за развитием проекта.</td>
+								</tr>
+								<tr>
+									<td width="100%" height="20"></td>
+								</tr>
+								<tr>
+									<td width="100%" style="padding:0 32px;color: rgba(255, 255, 255, 0.80);text-align: left;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 14px;font-style: normal;font-weight: 300;line-height: 125%;" align="left">Сертификат даёт право первой очереди на приобретение нового серийного электромобиля в 2025 году. До начала производства все владельцы электронного ключа АТОМ смогут участвовать в создании АТОМа и развивать культуру новой городской мобильности вместе с нами!</td>
+								</tr>
+								<tr>
+									<td width="100%" height="16"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
 
-<div class="app product_page">
-  <header class="main" data-header>
-  <div class="wrap">
-    <a href="/" class="logo"><img src="theme/img/logo.svg" alt=""></a>
-    <ul class="nav">
-      <li class="sub">
-        <a class="sub-link" href="#">О нас</a>
-        <ul>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Карьера</a></li>
-        </ul>
-      </li>
-      <li class="sub">
-        <a class="sub-link" href="#">Каталог</a>
-        <ul>
-          <li><a href="#">Медицинские изделия</a></li>
-          <li><a href="#">Лекарственные средства</a></li>
-          <li><a href="#">Косметическая продукция</a></li>
-          <li><a href="#">Линейки косметических средств</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Контрактное производство</a></li>
-      <li><a href="#">Фармаконадзор</a></li>
-      <li><a href="#">Где купить</a></li>
-      <li><a href="#">Новости</a></li>
-      <li><a href="#">Контакты</a></li>
-      <li class="mob-only">
-        <a href="#" class="phone">+7 495 504-25-50</a>
-        <div class="social">
-          <a href="#" class="social__tg"></a>
-          <a href="#" class="social__vk"></a>
-          <a href="#" class="social__ok"></a>
-        </div>
-      </li>
-    </ul>
-    <ul class="info">
-      <li>
-        <button class="search" type="button" data-modal-triger="search">
-          <svg><use xlink:href="theme/img/sprite.svg#search"></use></svg>
-        </button>
-      </li>
-      <!-- <li><button class="lang" type="button">Рус</button></li> -->
-      <li class="burger">
-        <div id="burgerBtn" class="burger__btn">
-          <span></span>
-          <span></span>
-        </div>
-      </li>
-      <li><a href="#" class="phone">+7 495 504-25-50</a></li>
-    </ul>
-  </div>
-</header>
-  <main class="wrap content"> 
-    <section class="breads">
-  <ul>
-    <li><a href="">Главная</a></li>
-    <li><span>Фармаконадзор</span></li>
-  </ul>
-</section>
-    <section class="block35">
-  <div class="item">
-    <div class="swiper main br" data-swiper="gallery">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-      </div>
-    </div>
-    <div class="swiper thumb" data-swiper="gallery_thumb">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/product/2.jpg" alt=""></div>
-      </div>
-    </div>
-    <div class="navs">
-      <button class="gallery_thumb_prev" type="button">
-        <svg><use xlink:href="/theme/img/sprite.svg#arrow_gallery"></use></svg>
-      </button>
-      <button class="gallery_thumb_next" type="button">
-        <svg><use xlink:href="/theme/img/sprite.svg#arrow_gallery"></use></svg>
-      </button>
-    </div>
-  </div>
-  <div class="item">
-    <h1>Антиперспирант Активная защита для мужчин</h1>
-    <div class="type">Гель для наружного применения </div>
-    <div class="article">артикул: 4 605 370 033 076 </div>
-    <ul class="params">
-      <li>
-        <div class="desc">Фармакотерапевтическая группа:</div>
-        <div class="value">Нестероидный противовоспалительный препарат</div>
-      </li>
-      <li>
-        <div class="desc">МНН:</div>
-        <div class="value">Кетопрофен 2,5%</div>
-      </li>
-    </ul>
-    <div class="packaging">
-      <div class="desc">Объем:</div>
-      <div class="value">75 мл </div>
-    </div>
-    <div class="orders">
-      <div class="desc">Продукт можно приобрести</div>
-      <ul>
-        <li><a href=""><img src="img/product/1.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/2.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/3.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/4.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/5.svg" alt=""></a></li>
-        <li><a href=""><img src="img/product/6.svg" alt=""></a></li>
-      </ul>
-    </div> 
-    <button class="btn greenfill h50 p32 fs16 fw600" type="button">Где купить</button>
-  </div> 
-</section>
-    <section class="block36 bganimation style1" data-aos="fade-up">
-  <div class="swiper swiperscroll" data-swiper="swiper_scroll">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <ul class="swipernavs_slider inverse">
-          <li><button class="active" type="button" data-product-step="0">Описание</button></li>
-          <li><button type="button" data-product-step="1">Активные компонены</button></li>
-          <li><button type="button" data-product-step="2">Состав</button></li>
-          <li><button type="button" data-product-step="3">Способ применения</button></li>
-          <li><button type="button" data-product-step="4">Особые указания</button></li>
-          <li><button type="button" data-product-step="5">О линейке</button></li>
-          <li><button type="button" data-product-step="6">О бренде</button></li>
-          <li><button type="button" data-product-step="6">О бренде 2</button></li>
-          <li><button type="button" data-product-step="6">О бренде 3</button></li>
-          <li><button type="button" data-product-step="6">О бренде 4</button></li>
-          <li><button type="button" data-product-step="6">О бренде 5</button></li>
-        </ul> 
-      </div>
-    </div>
-    <div class="swiper-scrollbar"></div>
-  </div>
-  <div class="swiper swiperparams" data-swiper="product">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="description databox">
-          <div class="h2">Продукция pharmlevel – косметика фармацевтического качества, эффективность которой доказана клиническими исследованиями.</div>
-          <div class="desc">
-            <p>Аква-гель ультраувлажняющий UREA представляет собой средство для ухода за обезвоженной кожей лица, которое насыщает кожу влагой, препятствует появлению сухости и шелушений. Формула крема с мочевиной, Patch2O и низкомолекулярной гиалуроновой кислотой поддерживает баланс влаги в коже и создает непревзойденное ощущение комфорта и увлажненности на целый день. </p>
-          </div>
-        </div>
-        <div class="params databox">
-          <div class="h2">Основные УТП</div>
-          <ul>
-            <li>
-              <div class="blurico">
-                <div class="box">
-                  <span aria-label="ico"></span>
-                  <img src="img/product/ico.svg" alt="">
-                </div>
-              </div>
-              <div class="desc">
-                <p>Инновационная рецептура pharmlevel обладает доказанной клинической эффективностью</p>
-              </div>
-            </li>
-            <li>
-              <div class="blurico">
-                <div class="box">
-                  <span aria-label="ico"></span>
-                  <img src="img/product/ico.svg" alt="">
-                </div>
-              </div>
-              <div class="desc">
-                <p>Увлажняет и удерживает влагу, делает кожу более свежей и сияющей</p>
-              </div>
-            </li>
-            <li>
-              <div class="blurico">
-                <div class="box">
-                  <span aria-label="ico"></span>
-                  <img src="img/product/ico.svg" alt="">
-                </div>
-              </div>
-              <div class="desc">
-                <p>Устраняет ощущение сухости и стянутости, повышает эластичность и тонус кожи лица</p>
-              </div>
-            </li>
-            <li>
-              <div class="blurico">
-                <div class="box">
-                  <span aria-label="ico"></span>
-                  <img src="img/product/ico.svg" alt="">
-                </div>
-              </div>
-              <div class="desc">
-                <p>Восстанавливает и сохраняет защитный слой кожи, обеспечивает комфортность применения</p>
-              </div>
-            </li>
-            <li>
-              <div class="blurico">
-                <div class="box">
-                  <span aria-label="ico"></span>
-                  <img src="img/product/ico.svg" alt="">
-                </div>
-              </div>
-              <div class="desc">
-                <p>Капельная технология при нанесении моментально трансформируется в водянистую структуру и моментально впитывается. Легкая текстура подходит для всех типов кожи и не оставляет липких следов</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="components databox">
-          <div class="h2">Активные компоненты</div>
-          <ul>
-            <li class="br">
-              <div class="h2">UREA (карбамид)</div>
-              <div class="desc">это естественный незаменимый увлажнитель, который является природным составляющим организма человека. Он способен насыщать влагой глубокие слои кожи, а также перемещать её ближе к верхнему слою эпидермиса, значительно улучшая её внешний вид. Его высокая гигроскопичность позволяет связывать молекулы воды, что препятствует испарению влаги с поверхности кожи.</div>
-            </li>
-            <li class="br">
-              <div class="h2">PatcH2O</div>
-              <div class="desc">инновационный комплекс  природных биополимеров гарантирует быстрое, длительное и устойчивое увлажнение, защищает микробиом от воздействия загрязнителей окружающей среды и помогает поддерживать здоровый гомеостаз кожи.</div>
-            </li>
-            <li class="br">
-              <div class="h2">Низкомеолекулярная гиалуроновая кислота</div>
-              <div class="desc">проникает в глубокие слои кожи, восстанавливает её естественное увлажнение и уменьшает ощущение дискомфорта</div>
-            </li>
-            <li class="br">
-              <div class="desc"><b>Продукция не содержит парабенов, ароматизаторов, красителей, минеральных масел, фталатов, формальдегидов</b></div>
-              <div class="desc">Является гипоаллергенной, подходит для чувствительной кожи. Оптимальная концентрация активных молекул, что позволяет достичь высокой эффективности формулы, сохраняя доказанную переносимость даже для чувствительной кожи.</div>
-            </li>
-          </ul>
-        </div>
-        <div class="text databox">
-          <div class="h2">Состав</div>
-          <div class="desc">Аqua, propylene glycol, peg-40 hydrogenated castor oil, camphor (камфора), menthol (ментол), comarum palustre extract (экстракт сабельника), phenoxyethanol, acrylates/c10-30 alkyl acrylate crosspolymer, juniperus communis fruit oil (эфирное масло можжевельника), rosmarinus officinalis leaf oil (эфирное масло розмарина), eucalyptus globulus oil (эфирное масло эвкалипта), ethylhexylglycerin, sodium hydroxide, limonene, linalool.</div>
-        </div>
-        <div class="about databox">
-          <div class="box">
-            <div class="info">
-              <div class="h2">О линейке</div>
-              <div class="desc">Продукты из линейки ГИАЛУРОЛ содержат в своем составе адаптивную гиалуроновую кислоту, которая интенсивно увлажняет и восстанавливает кожу, придает тонус и естественное сияние. Подходит для всех типов кожи. Предотвращает появление первых признаков возрастных изменений.</div>
-            </div>
-            <img src="img/product/about.jpg" class="br" alt="">
-          </div>
-          <img src="img/product/about2.jpg" class="br" alt="">
-        </div>
-        <div class="instructions databox">
-          <div class="h2">Инструкция по применению</div>
-          <a href="" class="btn blue download h50 p32 fs14 fw700">
-            <span>Скачать pdf инструкцию</span>
-            <svg><use xlink:href="theme/img/sprite.svg#download"></use></svg>
-          </a>
-          <ul class="accordion block">
-            <li>
-              <button class="h3" type="button" data-accordion>
-                <span>Подготовка</span>
-                <i></i>
-              </button>
-              <ul class="block">
-                <li>
-                  <div class="desc">
-                    <p>Используйте аква-гель для лица Urea ежедневно с утра и вечером. Возьмите небольшое количество крема величиной с горошину, согрейте в ладонях и нанесите перед сном на очищенную от макияжа и загрязнений, тонизированную кожу лица, шеи и декольте. Всегда наносите аква-гель аккуратными массажными движениями на лицо. После трансформации  аква-геля в водянистую структуру – распределите по лицу, на область шеи и декольте. При попадании в глаза тщательно промойте водой. Аква-гель можно использовать, как основу под макияж.</p>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <button class="h3" type="button" data-accordion>
-                <span>Разработка и выпуск</span>
-                <i></i>
-              </button>
-              <ul class="block">
-                <li>
-                  <div class="desc">
-                    <p>Используйте аква-гель для лица Urea ежедневно с утра и вечером. Возьмите небольшое количество крема величиной с горошину, согрейте в ладонях и нанесите перед сном на очищенную от макияжа и загрязнений, тонизированную кожу лица, шеи и декольте. Всегда наносите аква-гель аккуратными массажными движениями на лицо. После трансформации  аква-геля в водянистую структуру – распределите по лицу, на область шеи и декольте. При попадании в глаза тщательно промойте водой. Аква-гель можно использовать, как основу под макияж.</p>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <button class="h3" type="button" data-accordion>
-                <span>Сертификация</span>
-                <i></i>
-              </button>
-              <ul class="block">
-                <li>
-                  <div class="desc">
-                    <p>Используйте аква-гель для лица Urea ежедневно с утра и вечером. Возьмите небольшое количество крема величиной с горошину, согрейте в ладонях и нанесите перед сном на очищенную от макияжа и загрязнений, тонизированную кожу лица, шеи и декольте. Всегда наносите аква-гель аккуратными массажными движениями на лицо. После трансформации  аква-геля в водянистую структуру – распределите по лицу, на область шеи и декольте. При попадании в глаза тщательно промойте водой. Аква-гель можно использовать, как основу под макияж.</p>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <button class="h3" type="button" data-accordion>
-                <span>Доставка и хранение</span>
-                <i></i>
-              </button>
-              <ul class="block">
-                <li>
-                  <div class="desc">
-                    <p>Используйте аква-гель для лица Urea ежедневно с утра и вечером. Возьмите небольшое количество крема величиной с горошину, согрейте в ладонях и нанесите перед сном на очищенную от макияжа и загрязнений, тонизированную кожу лица, шеи и декольте. Всегда наносите аква-гель аккуратными массажными движениями на лицо. После трансформации  аква-геля в водянистую структуру – распределите по лицу, на область шеи и декольте. При попадании в глаза тщательно промойте водой. Аква-гель можно использовать, как основу под макияж.</p>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <button class="h3" type="button" data-accordion>
-                <span>Развитие ассортимента</span>
-                <i></i>
-              </button>
-              <ul class="block">
-                <li>
-                  <div class="desc">
-                    <p>Используйте аква-гель для лица Urea ежедневно с утра и вечером. Возьмите небольшое количество крема величиной с горошину, согрейте в ладонях и нанесите перед сном на очищенную от макияжа и загрязнений, тонизированную кожу лица, шеи и декольте. Всегда наносите аква-гель аккуратными массажными движениями на лицо. После трансформации  аква-геля в водянистую структуру – распределите по лицу, на область шеи и декольте. При попадании в глаза тщательно промойте водой. Аква-гель можно использовать, как основу под макияж.</p>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="method databox">
-          <div class="h2">Способ применения</div>
-          <div class="desc">
-            <p>Используйте аква-гель для лица Urea ежедневно с утра и вечером. Возьмите небольшое количество крема величиной с горошину, согрейте в ладонях и нанесите перед сном на очищенную от макияжа и загрязнений, тонизированную кожу лица, шеи и декольте. Всегда наносите аква-гель аккуратными массажными движениями на лицо. После трансформации  аква-геля в водянистую структуру – распределите по лицу, на область шеи и декольте. При попадании в глаза тщательно промойте водой. Аква-гель можно использовать, как основу под макияж.</p>
-            <img src="img/product/method.jpg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        Активные компонены
-      </div>
-      <div class="swiper-slide">
-        Состав
-      </div>
-      <div class="swiper-slide">
-        Способ применения
-      </div>
-      <div class="swiper-slide">
-        Особые указания
-      </div>
-      <div class="swiper-slide">
-        О линейке
-      </div>
-      <div class="swiper-slide">
-        О бренде
-      </div>
-    </div>
-  </div>
-</section>
-    <section class="block37" data-aos="fade-up">
-  <div class="h1">Рекомендуемые товары</div>
-  <div class="swipernavs">
-    <button class="similars_prev" type="button">
-      <svg><use xlink:href="/theme/img/sprite.svg#arrow_slider"></use></svg>
-    </button>
-    <button class="similars_next" type="button">
-      <svg><use xlink:href="/theme/img/sprite.svg#arrow_slider"></use></svg>
-    </button>
-  </div>
-  <div class="swiper swiperscroll" data-swiper="similars">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-      <div class="swiper-slide card_product">
-        <a href="">
-          <span class="img br">
-            <img src="img/collagen_products/s4/1.jpg" alt="">
-          </span>
-          <span class="type">pharmlevel Терапевтическая линейка</span>
-          <span class="h3">Губка коллагеновая кровоостанавливающая</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-  </main>
-  <footer class="wrap main">
-  <div class="item">
-    <a href="" class="logo"><img src="theme/img/logo.svg" alt=""></a>
-    <div class="desc">141801, Московская область, г. Дмитров, <br>ул. Профессиональная, д. 151.</div>
-    <div class="small">© 2023 ЗАО «Зеленая дубрава»</div>
-  </div>
-  <div class="item">
-    <ul>
-      <li><a href="">О компании</a></li>
-      <li><a href="">Лекарственные средства</a></li>
-      <li><a href="">Медицинские изделия</a></li>
-      <li><a href="">Косметическая продукция</a></li>
-      <li><a href="">Контрактное производство</a></li>
-      <li><a href="">Фармаконадзор</a></li>
-      <li><a href="">Новости</a></li>
-      <li><a href="">Где купить?</a></li>
-      <li><a href="">Контакты</a></li>
-    </ul>
-    <a href="" class="small">Политика конфиденциальности</a>
-  </div>
-  <div class="item">
-    <a href="tel:+74955042550" class="phone h2">+7 495 504-25-50</a>
-    <a href="mailto:info@mazi.ru" class="email h2">info@mazi.ru</a>
-    <ul>
-      <li>
-        <a href="">
-          <svg><use xlink:href="theme/img/sprite.svg#telegram"></use></svg>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <svg><use xlink:href="theme/img/sprite.svg#vk"></use></svg>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <svg><use xlink:href="theme/img/sprite.svg#ok"></use></svg>
-        </a>
-      </li>
-    </ul>
-    <a href="" class="created small">
-      <span>Создание сайтов — </span>
-      <svg><use xlink:href="theme/img/sprite.svg#created"></use></svg>
-    </a>
-  </div>
-</footer>
-</div>
-<div class="modal modalbox modalbox_trans" data-modal-target="search" data-modal-triger="search">
-  <div class="search-window">
-    <form id="searchForm" class="search-window-form" action="search_result.html">
-      <input id="searchField" class="search__field" type="text" placeholder="Начните поиск">
-      <button class="search__btn" type="submit">
-        <svg><use xlink:href="/theme/img/sprite.svg#arrow_search"></use></svg>
-      </button>
-    </form>
-    <ul class="search-suggest">
-      <li class="search-suggest__item">
-        <a href="#">Контрактное <span class="highlight">производ</span>ство</a>
-      </li>
-      <li class="search-suggest__item">
-        <a href="#"><span class="highlight">Производ</span>ство лекарственных средств</a>
-      </li>
-      <li class="search-suggest__item">
-        <a href="#"><span class="highlight">Производ</span>ство косметики</a>
-      </li>
-    </ul>
-    <div class="search-empty">По вашему запросу ничего не найдено. Попробуйте другой запрос</div>
-  </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-<script src="theme/js/vendors.min.js"></script>
-<script src="theme/js/app.min.js"></script> 
+					<tr>
+						<td width="100%" height="40"></td>
+					</tr>
+					<tr>
+						<td width="100%" style="padding:0 10px;color: rgba(227, 227, 227, 0.80);text-align: center;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 13px;font-style: normal;font-weight: 600;line-height: 125%;" align="center">Ваш ATOM | <a href="mailto:support@atom.auto" style="color:#fff">support@atom.auto</a></td>
+					</tr>
+					<tr>
+						<td width="100%" height="18"></td>
+					</tr>
+					<tr>
+						<td width="100%" height="50"></td>
+					</tr>
+					<tr>
+						<td width="100%" align="left">
+							<div class="footer" style="border-radius:20px 20px 0 0;border:none;width:100%;background-color:rgba(0, 0, 0, 0.75);padding:16px 12px 12px 12px;text-align: left;">
+								<table role="presentation" style="mso-table-lspace:0;mso-table-rspace:0;" width="108" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td width="36">
+											<a href="https://t.me/atom_auto" style="display: block;" target="_blank">
+												<img src="https://img.us12.besteml.com/en/v5/user-files?userId=5785501&resource=himg&disposition=inline&name=6t8rsom86n9huuihgra41uxrsdk6nrrodoetytekxsgg3f3bh6az6wdoziy9xt1cr7ipp56deenxw69ibz8o6tu68me" alt="Telegram" title="Telegram" style="height:auto;display:block;border:0" width="36" height="36">
+											</a>
+										</td>
+										<td width="36">
+											<a href="https://vk.com/atom.auto" style="display: block;" target="_blank">
+												<img src="https://img.us12.besteml.com/en/v5/user-files?userId=5785501&resource=himg&disposition=inline&name=6oty9m7pdssup9ihgra41uxrsdk6nrrodoetytekxsgg3f3bh6azons3wuzfjgm1a7ipp56deenxw69ibz8o6tu68me" alt="VK" title="VK" style="height:auto;display:block;border:0" width="36" height="36">
+											</a>
+										</td>
+										<td width="36">
+											<a href="https://www.youtube.com/@atomauto" style="display: block;" target="_blank">
+												<img src="https://img.us12.besteml.com/en/v5/user-files?userId=5785501&resource=himg&disposition=inline&name=61kpy56rmfsye3ihgra41uxrsdk6nrrodoetytekxsgg3f3bh6aztk8pj86xg6if47ipp56deenxw6jdunaude91q3o" alt="YouTube" title="YouTube" style="height:auto;display:block;border:0" width="36" height="36">
+											</a>
+										</td>
+									</tr>
+								</table>
+								<table role="presentation" style="mso-table-lspace:0;mso-table-rspace:0;" width="100%" cellspacing="0" cellpadding="0" border="0">
+									<tr>
+										<td width="100%" height="14"></td>
+									</tr>
+									<tr>
+										<td width="100%" align="left">
+											<img src="https://img.us12.besteml.com/en/v5/user-files?userId=5785501&resource=himg&disposition=inline&name=6kw5u6yzy7xcs9ihgra41uxrsdk6nrrodoetyteka86mgyku33asxczm8wh6h99a67ipp56deenxw9ytqoz6atkqcne" alt="АТОМ. БЛИЖЕ, ЧЕМ КАЖЕТСЯ" title="АТОМ. БЛИЖЕ, ЧЕМ КАЖЕТСЯ" style="height:auto;display:block;border:0;width:100%; max-width: 404px;" width="404">
+										</td>
+									</tr>
+									<tr>
+										<td width="100%" height="14"></td>
+									</tr>
+									<tr>
+										<td width="100%" style="color: rgba(255, 255, 255, 0.45);text-align: left;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 11px;font-style: normal;font-weight: 300;line-height: 125%;" align="left">Если подписка перестала радовать, вы можете <a href="#" style="display: inline;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 11px;font-style: normal;font-weight: 600;line-height: 125%; margin:0; text-decoration: underline; color: rgba(255, 255, 255, 0.45)" rel="noopener">отписаться</a>.</td>
+									</tr>
+									<tr>
+										<td width="100%" height="14"></td>
+									</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </body>
-</html> 
+</html>
