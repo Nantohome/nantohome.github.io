@@ -16,10 +16,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "\u0000vite/modulepreload-polyfill": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -38,10 +38,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "index.html": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -60,10 +60,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@unhead/dom/dist/index.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -82,10 +82,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@unhead/shared/dist/index.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -104,10 +104,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@unhead/vue/dist/shared/vue.cf295fb1.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -126,10 +126,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@unhead/vue/dist/shared/vue.f36acd1f.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -148,10 +148,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -170,10 +170,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -192,10 +192,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -214,10 +214,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -236,10 +236,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/hookable/dist/index.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -258,10 +258,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/pinia/dist/pinia.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -280,10 +280,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/unhead/dist/index.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -302,10 +302,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/vite-ssg/dist/index.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -324,10 +324,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -346,10 +346,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/vite-ssg/dist/shared/vite-ssg.a009fbf1.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -368,10 +368,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/vue-demi/lib/index.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -390,10 +390,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "node_modules/vue-router/dist/vue-router.mjs": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -412,10 +412,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/App.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -434,10 +434,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/assets/css/index.css": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -456,10 +456,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/assets/img/landing/label-offers-img.svg": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -478,10 +478,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/assets/img/landing/label-service-img.svg": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -500,10 +500,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/assets/img/landing/label-stats-img.svg": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -522,10 +522,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/components/svg/IconDiscord.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -544,10 +544,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/components/svg/IconInfo.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -566,10 +566,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/components/svg/IconTelegram.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -588,10 +588,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/components/svg/LinkRegister.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -610,10 +610,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/layouts/RegLayout.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -632,10 +632,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/main.js": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -654,10 +654,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/pages/AuthPage.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -676,10 +676,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/pages/LandingPage.vue": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -698,10 +698,10 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ],
   "src/router/index.js": [
     "/assets/label-offers-img-da9eb7b3.svg",
@@ -720,9 +720,9 @@
     "/assets/robux_down-mob-839538fd.png",
     "/assets/robux_up-mob-2579e9e4.png",
     "/assets/labels-bg-mob-5a2f6091.svg",
-    "/assets/rl-img-8f44d09d.svg",
+    "/assets/rl-img-5743c445.svg",
     "/assets/bg-auth_small-03af32dc.webp",
     "/assets/bg-auth_mob-1ddf8336.webp",
-    "/assets/rl-img_mob-70f6acde.svg"
+    "/assets/rl-img_mob-e9e9f736.svg"
   ]
 }
