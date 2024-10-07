@@ -1,0 +1,125 @@
+/******************************************************************************
+	Finances Page
+******************************************************************************/
+/* .ml-dashboard_finances{
+	min-height: 50vh;
+} */
+
+.finance-header{
+	display: flex;	
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	gap: 20px;
+}
+.finance-header .select{
+	width: 360px;
+}
+.finance-header .ml-btn{
+	width: 200px;
+}
+
+
+
+
+
+
+.finance-table{
+	width: 100%;
+}
+.finance-table-wrap{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-auto-flow: column;
+
+	width: auto;
+
+	margin-top: 20px;
+}
+
+.finance-table-title__item{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 44px;
+	
+	padding: 0 6px 0 16px;
+
+	border-radius: 18px 0 0 18px;
+
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--white85);
+
+	white-space: nowrap;
+}
+.finance-table-title__item.finance-table-title__item_desc{
+	margin-bottom: 4px;
+}
+.finance-table-title__item_total{
+	color: var(--white25);
+}
+.finance-table-title__item:nth-child(even){
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+.finance-table-col__item{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 44px;
+	
+	padding: 0 6px;
+
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--white70);
+}
+.finance-table-col__item.finance-table-col__item_desc{
+	margin-bottom: 4px;
+
+	color: var(--white25);
+}
+.finance-table-col__item:nth-child(even){
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+.finance-table-total__item{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+
+	height: 44px;
+	
+	padding: 0 16px 0 6px;
+
+	border-radius: 0 18px 18px 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--white85);
+}
+.finance-table-total__item.finance-table-total__item_desc{
+	margin-bottom: 4px;
+}
+.finance-table-total__item:nth-child(even){
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+
+.ml-dashboard_finances{
+	width: 100%;
+	overflow-x: auto;
+}
+
+
+@media (max-width: 1199px) {
+}

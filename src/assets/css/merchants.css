@@ -1,0 +1,446 @@
+/******************************************************************************
+	Merchants
+******************************************************************************/
+.merch-create{
+	flex: 0 0 auto;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+	width: 600px;
+	height: 366px;
+	
+	padding: 28px 42px;
+
+	border-radius: 18px;
+	background: var(--bg_block2);
+}
+.merch-create__img{
+	flex: 0 0 auto;
+
+	display: block;
+	
+	width: 58px;
+	height: 58px;
+
+	margin-bottom: 24px;
+
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}
+.merch-create__text{
+	flex: 0 0 auto;
+	
+	width: 296px;
+
+	margin-bottom: 32px;
+
+	font-size: 18px;
+	line-height: 25px;
+
+	color: rgba(255, 255, 255, 0.40);
+
+	text-align: center;
+}
+
+
+
+
+.merch-project.ml-modal{
+	gap: 44px;
+}
+.merch-project-field:not(:first-child){
+	margin-top: 12px;	
+}
+
+
+
+
+
+
+/* Merch settings */
+.merch-settings{
+	display: grid;
+	grid-template-areas:
+		'buy integration key'
+		'help integration key';
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto min-content;
+	grid-gap: 20px;
+}
+
+.merch-settings-buy{
+	grid-area: buy;
+}
+.merch-settings-buy-field:not(:first-child){
+	margin-top: 12px;
+}
+.merch-settings-banfield.merch-settings-buy-field{
+	margin-top: 12px;
+}
+.merch-settings-banfield .ml-ui__label{
+	color: var(--white20);
+}
+
+.merch-settings-help{
+	grid-area: help;
+}
+
+.merch-settings-help .ml-btn + .ml-btn{
+	margin-top: 12px;
+}
+
+.merch-settings-integration{
+	grid-area: integration;
+}
+.green.merch-settings-status-color + .select-item__title{
+	color: var(--green75);
+}
+.red.merch-settings-status-color + .select-item__title{
+	color: var(--red85);
+}
+.merch-settings-integration-field:not(:first-child){
+	margin-top: 12px;
+}
+
+.merch-settings-key{
+	grid-area: key;
+
+	position: relative;
+	padding-bottom: 72px;
+}
+.merch-settings__btn{
+	margin-top: 12px;
+}
+.merch-settings-key-form{
+	margin-top: 24px;
+}
+.merch-settings-key-form .merch-settings-key-field:not(:first-child){
+	margin-top: 12px;
+}
+.merch-settings-banlist{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+.merch-settings-banlist__item{
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 28px;
+
+	padding: 0 0 0 8px;
+
+	border-radius: 8px;
+
+	background: var(--bg_block2);
+}
+
+.merch-settings-banlist__item-name{
+	font-size: 16px;
+	line-height: 16px;
+	
+	color: var(--white85);
+}
+.merch-settings-banlist__item-remove{
+	display: inline-block;
+
+	width: 28px;
+	height: 28px;
+
+	border-radius: 8px;
+
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 10px 11px;
+
+	cursor: pointer;
+
+	opacity: 0.3;
+
+	will-change: opacity;
+
+	transition: opacity var(--anim_func) var(--anim_time);
+}
+.merch-settings-banlist__item-remove:hover{
+	opacity: 1;
+}
+
+
+.merch-settings__goback{
+	position: absolute;
+
+	bottom: 32px;
+	right: 48px;
+
+	font-weight: 500;
+	
+	font-size: 16px;
+	line-height: 20px;
+
+	color: var(--white85);
+
+	cursor: pointer;
+}
+.merch-settings__goback::before{
+	content: '← ';
+
+	font-size: 20px;
+}
+
+
+.merch-settings-notify{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.merch-settings-notify span{
+	margin-left: 8px;
+}
+
+
+
+
+
+
+
+/* Merch list */
+.merch-list{
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(auto-fill, minmax(384px, 1fr));
+	gap: 12px;
+
+	width: 100%;
+}
+
+.merch-list .merch-create{
+	min-width: 325px;
+	max-width: 600px;
+	width: auto;
+	height: auto;
+}
+
+.merch-block{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+
+	min-width: 325px;
+	max-width: 600px;
+	
+	padding: 28px 42px;
+
+	border-radius: 18px;
+	background: var(--bg_block2);
+}
+
+.merch-block-header{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.merch-block__del{
+	flex: 0 0 auto;
+}
+.merch-block__name{
+	flex: 0 1 auto;
+
+	margin-left: 4px;
+}
+
+.merch-block-body{
+	margin: 24px 0;
+}
+.merch-block-selects-wrap{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.merch-block-selects{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 12px;
+
+	width: 100%;
+}
+.merch-block-selects > div{
+	width: 50%;
+}
+.merch-block-selects-field{
+	min-width: 70px;
+}
+.merch-block-selects__input.ml-ui__input{
+	background-color: var(--btn);
+}
+
+.merch-block-api{
+	margin-top: 12px;
+}
+.merch-block__apikey{
+	background-color: var(--btn);
+}
+.merch-block__apikey:hover{
+	background-color: var(--btn_hover);
+}
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+	.merch-create{
+		width: 100%;
+		height: auto;
+		
+		padding: 44px 42px;
+	}
+	
+	.merch-create__text{
+		width: 100%;
+	}
+
+
+	.merch-project.ml-modal{
+		gap: 24px;
+
+		padding: 42px 42px 52px;
+	}
+
+
+
+/* Merch settings */
+	.merch-settings{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+
+		gap: 20px;
+	}
+	.merch-settings-help{
+		order: 1;
+	}
+	/*.merch-settings > .ml-block{
+		padding-top: 0;
+		padding-bottom: 0;
+	}*/
+
+	.merch-settings .ml-mobile-footer{
+		margin-top: -20px;
+	}
+
+	.merch-settings-buy-selects .select:last-child{
+		margin-top: 12px;
+	}
+
+	.green.merch-settings-status-color + .select-item__title{
+		color: var(--green75);
+	}
+	.red.merch-settings-status-color + .select-item__title{
+		color: var(--red85);
+	}
+	.merch-settings-integration-field:not(:first-child){
+		margin-top: 12px;
+	}
+
+
+	.merch-settings-key{
+		padding: 20px var(--padding-side);
+	}
+
+	.merch-settings-key__apinbtn{
+		margin-top: 24px;
+	}
+	.merch-settings-key-form{
+		margin-top: 24px;
+	}
+	.merch-settings-key-form .merch-settings-key-field:not(:first-child){
+		margin-top: 12px;
+	}
+	.merch-settings-save__btn{
+		margin-top: 24px;
+	}
+
+	.merch-settings__goback_mob{
+		display: inline-block;
+		
+		margin-bottom: 20px;
+
+		font-weight: 500;
+		
+		font-size: 16px;
+		line-height: 20px;
+	
+		color: var(--white85);
+	}
+	.merch-settings__goback_mob::before{
+		content: '← ';
+	
+		font-size: 20px;
+	}
+
+
+
+
+
+/* Merch list */
+	.merch-list{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+
+		gap: 20px;
+
+		padding-bottom: 0;
+	}
+
+	.merch-list .merch-create{
+		min-width: 100%;
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+	}
+
+	.merch-block-selects-wrap{
+		margin: 0 -6px;
+	}
+
+	.merch-block{
+		justify-content: flex-start;
+		min-width: 100%;
+		max-width: 100%;
+	}
+	.merch-block-selects{
+		--sel_height: 44px;
+	}
+}
+
+
+
+
+@media (max-width: 359px) {
+	.merch-block-selects{
+		width: auto;
+	}
+}

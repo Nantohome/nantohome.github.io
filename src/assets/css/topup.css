@@ -1,0 +1,75 @@
+/******************************************************************************
+	Topup
+******************************************************************************/
+.topup-currency__icon{
+	display: inline-block;
+
+	width: 20px;
+	height: 20px;
+
+	margin-right: 11px;
+
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}
+.topup-currency__tax{
+	margin: 1px 0 0 16px;
+
+	font-size: 16px;
+	line-height: 17px;
+	
+	color: rgba(255, 255, 255, 0.25);
+}
+
+.topup-row{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+	gap: 12px;
+}
+.topup-item{
+	flex: 0 0 calc(50% - 6px);
+}
+
+.topup-total__input.ui__input{
+	color: rgba(255, 255, 255, 0.25);
+}
+.topup-total__label{
+	top: 50%;
+	right: 16px;
+
+	font-size: 18px;
+	line-height: 24px;
+
+	color: rgba(255, 255, 255, 0.25);
+
+	transform: translateY(-50%);
+}
+
+
+@media (max-width: 1199px) {
+	.topup-currency__tax{
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.topup-row{
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+
+		gap: 20px;
+	}
+	.topup-item{
+		flex: 0 0 auto;
+	}
+	.topup-total__label{
+		right: 22px;
+
+		font-size: 16px;
+	}	
+}

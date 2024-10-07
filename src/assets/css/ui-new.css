@@ -1,0 +1,975 @@
+/******************************************************************************
+	UI
+******************************************************************************/
+input[type="checkbox"]{
+	position: relative;
+
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: var(--btn);
+	
+	margin: 0;
+	padding: 0;
+
+	font: inherit;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(42, 41, 40, 0.35);
+	border-radius: 6px;
+	outline: none;
+
+	overflow: hidden;
+
+	transition: all var(--anim_time) var(--anim_func);
+}
+input[type="checkbox"]:checked{
+	border-color: transparent;
+	background-color: var(--violet);
+}
+input[type="checkbox"]::before{
+	content: '';
+
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-color: var(--violet);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 12px 10px;
+
+	opacity: 0;
+
+	will-change: opacity;
+	transition: opacity var(--anim_time) var(--anim_func);
+}
+input[type="checkbox"]:checked::before{
+	opacity: 1;
+}
+input[type="checkbox"].rounded{
+	border-radius: 10px;
+}
+
+
+
+
+input[type="radio"]{
+	position: relative;
+
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	
+	margin: 0;
+	padding: 0;
+
+	font: inherit;
+	width: 22px;
+	height: 22px;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	border-radius: 11px;
+	outline: none;
+
+	overflow: hidden;
+
+	transition: all var(--anim_time) var(--anim_func);
+}
+input[type="radio"]:checked{
+	border-color: transparent;
+	background-color: var(--violet);
+}
+input[type="radio"]::before{
+	content: '';
+
+	position: absolute;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 12px 10px;
+
+	opacity: 0;
+
+	will-change: opacity;
+	transition: opacity var(--anim_time) var(--anim_func);
+}
+input[type="radio"]:checked::before{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+.ml-table-checkbox{
+	position: relative;
+
+	display: block;
+
+	width: 24px;
+	height: 24px;
+
+	cursor: pointer;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.ml-table-checkbox__input{
+	display: block;
+	
+	width: 100%;
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	opacity: 0;
+}
+.ml-table-checkbox__el{
+	position: absolute;
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	border: 3px solid transparent;
+	border-radius: 50%;
+
+	background-color: rgba(255, 255, 255, 0.05);
+
+	transition: all var(--anim_time) var(--anim_func);
+}
+.ml-table-checkbox__input:checked ~ .ml-table-checkbox__el{
+	border-color: var(--violet);
+	background-color: var(--white85);
+}
+
+
+
+.ml-ui__label{
+	display: block;
+
+	min-height: 17px;
+
+	margin-bottom: 4px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+
+	color: var(--white20);
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.ml-ui__label:first-letter{
+	text-transform: uppercase;
+}
+.ml-ui__label.error{
+	color: var(--red);
+}
+
+.ml-ui-input-wrap{
+	position: relative;
+}
+.ml-ui-input-wrap__label{
+	position: absolute;
+}
+.ml-ui__input{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	width: 100%;
+	height: var(--sel_height);
+
+	padding: 0 22px;
+
+	border: none;
+	border-radius: 14px;
+	background: var(--input);
+	outline: none;
+
+	font-family: var(--base_font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+
+	color: var(--white85);
+
+	resize: none;
+
+	transition: color var(--anim_time) linear, background-color var(--anim_time) linear;
+}
+.ml-ui__input::-webkit-inner-spin-button{
+	display: none;
+	appearance: none;
+}
+
+.ml-ui__input::placeholder{
+	font-family: var(--base_font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+
+	color: var(--white25);
+
+	transition: var(--anim_time);
+}
+
+.ml-ui__input:focus{
+	outline: none;
+	caret-color: var(--white85);
+}
+.ml-ui__input:focus::placeholder {
+	opacity: 0;
+}
+
+.ml-ui__input:disabled{
+	background-color: var(--disabled);
+	color: var(--white85);
+}
+
+
+.ml-ui__input_textarea{
+	height: 116px;
+
+	padding: 10px 22px;
+
+	line-height: 24px;
+}
+.ml-ui__input.ml-ui__input_textarea::placeholder{
+	line-height: 24px;
+}
+
+
+
+
+.ml-ui-inputbtn{
+	position: relative;
+}
+.ml-ui-inputbtn .ml-ui__input{
+	padding-right: 64px;
+
+	text-overflow: ellipsis;
+}
+.ml-ui-inputbtn__btn{
+	position: absolute;
+
+	top: 0;
+	right: 0;
+	width: 64px;
+	height: var(--sel_height);
+
+	border: none;
+	outline: none;
+
+	font-family: var(--base_font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+
+	color: var(--white85);
+
+	background-color: var(--double_btn);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	border-radius: 0 14px 14px 0 ;
+
+	overflow: hidden;
+
+	z-index: 10;
+
+	cursor: pointer;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+
+	transition: background-color var(--anim_func) var(--anim_time), opacity var(--anim_func) var(--anim_time);
+}
+.ml-ui-inputbtn__btn:hover{
+	background-color: var(--double_btn_hover);
+}
+.ml-ui-inputbtn__btn.js-active,
+.ml-ui-inputbtn__btn:active{
+	background-color: var(--violet);
+}
+.ml-ui-inputbtn__btn:disabled{
+	opacity: 0.5;
+
+	cursor: default;
+
+	background-color: var(--double_btn);
+}
+
+
+.ml-digit-error{
+	display: none;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 11px;
+
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--red);
+
+	text-align: center;
+}
+.ml-ui-digit-error.js-show{
+	display: block;
+}
+
+.ml-ui-digit-list{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: flex-start;
+
+	padding: 0 8px;
+}
+
+.ml-ui__digit{
+	width: 44px;
+	height: 44px;
+
+	margin-right: 16px;
+	padding: 0;
+
+	border: 1px solid transparent;
+	border-radius: 14px;
+	background: var(--input);
+
+	outline: none;
+
+	font-family: var(--base_font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+
+	text-align: center;
+
+	color: var(--white85);
+
+	transition: border-color var(--anim_time) linear, color var(--anim_time) linear, background-color var(--anim_time) linear;
+}
+.ml-ui__digit:last-child{
+	margin-right: 0;
+}
+
+.ml-ui__digit::placeholder{
+	font-family: var(--base_font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+
+	color: var(--white25);
+
+	transition: var(--anim_time) var(--anim_func);
+}
+.ml-ui__digit:focus::placeholder {
+	opacity: 0;
+}
+
+.ml-ui__digit:disabled{
+	background-color: var(--disabled);
+	color: var(--white85);
+}
+
+
+.ml-ui-digit-repeat{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: baseline;
+
+	margin-top: 20px;
+}
+.ml-ui-digit-repeat__link{
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(255, 255, 255, 0.45);
+
+	cursor: pointer;
+
+	text-decoration: underline;
+
+	transition: var(--anim_func) var(--anim_time);
+}
+.ml-ui-digit-repeat__link:hover{
+	text-decoration-color: transparent;
+}
+.ml-ui-digit-repeat__link.disabled{
+	text-decoration-color: transparent;
+	color: rgba(255, 255, 255, 0.25);
+
+	pointer-events: none;
+}
+
+.ml-ui-digit-repeat__timer{
+	display: inline-block;
+
+	width: 40px;
+
+	margin-left: 0.5ch;
+	
+	font-size: 16px;
+	line-height: 24px;
+
+	color: rgba(255, 255, 255, 0.25);
+}
+
+
+
+
+
+
+.ml-ui__input:-webkit-autofill,
+.ml-ui__input:-webkit-autofill:hover,
+.ml-ui__input:-webkit-autofill:focus,
+.ml-ui__input:-webkit-autofill:active,
+.ml-ui__digit:-webkit-autofill,
+.ml-ui__digit:-webkit-autofill:hover,
+.ml-ui__digit:-webkit-autofill:focus{
+    transition:
+		background-color 5000000s ease-in-out 0s,
+		color 5000000s ease-in-out 0s,
+		font-size 5000000s ease-in-out 0s,
+		font-family 5000000s ease-in-out 0s;
+}
+.ml-ui__input_number::-webkit-outer-spin-button,
+.ml-ui__input_number::-webkit-innner-spin-button,
+.ml-ui__digit::-webkit-outer-spin-button,
+.ml-ui__digit::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+}
+.ml-ui__input_number,
+.ml-ui__input_number:hover,
+.ml-ui__input_number:focus,
+.ml-ui__digit,
+.ml-ui__digit:hover,
+.ml-ui__digit:focus{
+	appearance: none;
+	-moz-appearance: textfield;
+}
+
+
+
+
+
+/******************************************************************************
+	Button
+******************************************************************************/
+.ml-btn{
+	position: relative;
+	
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: var(--btn_height);
+
+	border: none;
+	border-radius: 18px;
+
+	
+	background-color: var(--btn);
+	background-image: none;
+	background-repeat: no-repeat;
+	
+	font-family: var(--base_font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+
+	color: var(--white85);
+
+	cursor: pointer;
+
+	overflow: hidden;
+
+	z-index: 5;
+
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+	-webkit-user-select: none;
+
+	will-change: background-color;
+	transition: background-color var(--anim_time) var(--anim_func);
+}
+
+.ml-btn > span{
+	position: relative;
+
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	z-index: 10;
+
+	will-change: color;
+	transition: color var(--anim_time) var(--anim_func);
+}
+
+.ml-btn > span::before{
+	will-change: opacity;
+	transition: opacity var(--anim_time) var(--anim_func);
+}
+
+.ml-btn:hover{
+	background-color: var(--btn_hover);
+}
+.ml-btn:active{
+	background-color: var(--btn_active);
+}
+.ml-btn:disabled,
+.tablepanel__btn.ml-btn:disabled{
+	color: var(--white25);
+	background-color: var(--disabled);
+
+	pointer-events: none;
+}
+.ml-btn:disabled span::before,
+.tablepanel__btn.ml-btn:disabled span::before{
+	opacity: 0.3;
+}
+
+.ml-btn.ml-btn_violet{
+	background-color: var(--violet);
+}
+.ml-btn.ml-btn_violet:hover{
+	background-color: var(--violet_hover);	
+}
+.ml-btn.ml-btn_violet:active{
+	background-color: var(--violet_active);
+}
+
+
+.ml-btn.ml-btn_small{
+	width: auto;
+	height: 36px;
+
+	padding: 0 28px;
+}
+
+
+/******************************************************************************
+	Icon btns
+******************************************************************************/
+.icon-btn{
+	display: inline-block;
+	
+	width: 38px;
+	height: 38px;
+
+	position: relative;
+
+	border: none;
+	border-radius: 12px;
+
+	
+	background-color: var(--btn);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+	
+	cursor: pointer;
+
+	z-index: 5;
+
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+
+	will-change: background-color;
+	transition: background-color var(--anim_time) var(--anim_func);
+}
+
+.icon-btn:hover{
+	background-color: var(--btn_hover);
+}
+.icon-btn:active{
+	background-color: var(--btn_active);
+}
+.icon-btn:disabled{
+	color: var(--white25);
+	background-color: var(--disabled);
+	
+	pointer-events: none;
+}
+.icon-btn.js-active{
+	background-color: var(--btn_active);	
+}
+
+
+.icon-btn_yes.js-active{
+	background-color: var(--green75);
+}
+.icon-btn_no.js-active{
+	background-color: var(--red85);
+}
+.icon-btn_freeze.js-active{
+	background-color: var(--blue_indicator);
+}
+.icon-btn_dollar.js-active{
+	background-color: var(--green75);
+}
+
+.edit-admin-btn{
+	flex: 0 0 auto;
+	
+	display: inline-block;
+	
+	width: 16px;
+	height: 16px;
+
+	margin-left: 10px;
+
+	border: none;
+	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 16px 16px;
+	
+	cursor: pointer;
+
+	z-index: 5;
+	
+	opacity: 0.2;
+
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+
+/******************************************************************************
+	Editable input
+******************************************************************************/
+.editable-input{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	overflow: hidden;
+}
+.editable-input__btn{
+	flex: 0 0 auto;
+}
+.editable-input__text{
+	flex: 0 0 auto;
+
+	margin-left: 16px;
+
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 22px;
+
+	color: #FFF;
+}
+.editable-input__el{
+	flex: 0 1 auto;
+
+	display: inline-block;
+
+	width: 134px;
+	
+	margin-left: 16px;
+	padding: 0;
+
+	border: none;
+	outline: none;
+
+	font-family: var(--base_font);
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 22px;
+
+	color: #FFF;
+
+	background: transparent;
+}
+.editable-input__el::placeholder{
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.10);
+}
+
+
+
+
+
+
+
+/******************************************************************************
+	Gradient Button
+******************************************************************************/
+.ml-gradient-btn{
+	position: relative;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: var(--btn_height);
+
+	border: none;
+	border-radius: 18px;
+
+	
+	background-color: transparent;
+	background-image: var(--gradient_btn);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 200% 100%;
+	
+	font-family: var(--base_font);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+
+	color: var(--white85);
+
+	cursor: pointer;
+
+	overflow: hidden;
+
+	z-index: 5;
+
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+	-webkit-user-select: none;
+
+	will-change: background-position;
+	transition: background-position var(--anim_time) var(--anim_func);
+}
+
+.ml-gradient-btn::after{
+	content: '';
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	border-radius: 18px;
+
+	background: rgba(0, 0, 0, 0.15);
+
+	opacity: 0;
+
+	will-change: opacity;
+	transition: opacity var(--anim_time) var(--anim_func);
+
+	pointer-events: none;
+
+	z-index: 15;
+}
+
+
+.ml-gradient-btn > span{
+	position: relative;
+
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+
+	z-index: 10;
+}
+.ml-gradient-btn > span::before{
+	content: '';
+	
+	display: inline-block;
+	
+	margin-right: 10px;
+
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.ml-gradient-btn_discord span::before{
+	width: 27px;
+	height: 19px;
+}
+
+
+.ml-gradient-btn:hover{
+	background-position: 100% 0;
+}
+.ml-gradient-btn:active{
+	background-position: 0 0;
+}
+.ml-gradient-btn:active::after{
+	opacity: 1;
+}
+.ml-gradient-btn:disabled{
+	background-color: #171717;
+	background-image: none;
+	
+	opacity: 0.75;
+
+	pointer-events: none;
+}
+.ml-gradient-btn:disabled span{
+	opacity: 0.45;
+}
+
+
+
+/******************************************************************************
+	Button Loader
+******************************************************************************/
+.ml-btn .btn-loader__text{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+
+	color: var(--white85);
+}
+
+.ml-btn .btn-loader-dots > span{
+	display: block;
+	
+	margin-left: 3px;
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+
+	color: var(--white85);
+
+	animation: mlBtnLoader 1s ease-in-out infinite;
+}
+.ml-btn .btn-loader-dots > span:nth-child(2){
+	animation-delay: -0.85s;
+}
+.ml-btn .btn-loader-dots > span:nth-child(3){
+	animation-delay: -0.7s;
+}
+
+@keyframes mlBtnLoader{
+	0%, 60%, to{
+		transform: none;
+	}
+	30%{
+		transform: translateY(-4px)
+	}
+}
+
+
+
+
+
+
+
+
+
+/*** Help btn ***/
+.help-btn{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.help-btn svg{
+	margin: 0 8px 0 10px;
+
+	cursor: pointer;
+}
+.help-btn svg path{
+	fill-opacity: 0.25;
+
+	will-change: fill-opacity;
+	transition: fill-opacity var(--anim_func) var(--anim_time);
+}
+.help-btn span{
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--white25);
+
+	will-change: color;
+	transition: color var(--anim_func) var(--anim_time);
+}
+
+.help-btn:hover svg path{
+	fill-opacity: 0.5;
+}
+.help-btn:hover span{
+	color: var(--white50);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+/*** Textarea ***/
+	.ml-ui__input_mob-textarea{
+		height: 68px;
+
+		padding: 10px 22px;
+
+		line-height: 24px;
+	}
+	.ml-ui__input.ml-ui__input_mob-textarea::placeholder{
+		line-height: 24px;
+	}
+
+
+/******************************************************************************
+	Button Loader
+******************************************************************************/
+	.ml-btn .btn-loader__text{
+		font-size: 16px;
+	}
+
+	.ml-btn .btn-loader-dots > span{
+		margin-left: 1px;
+
+		font-size: 16px;
+	}
+
+
+
+	.ml-btn.ml-btn_small{
+		padding: 0;
+	}
+
+
+/*** Editable input ***/
+	.editable-input__text,
+	.editable-input__el{
+		width: calc(100% - 54px);
+	}
+}

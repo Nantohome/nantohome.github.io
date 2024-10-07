@@ -1,0 +1,182 @@
+/******************************************************************************
+	Dashboard
+******************************************************************************/
+.table.table-dashboard{
+	margin: 0;
+}
+.table-dashboard .table-head-cell{
+	padding-top: 12px;
+}
+.table-dashboard .table-head-cell:nth-child(2){
+	padding-left: 0;
+	padding-right: 0;
+}
+.table-dashboard .table-cell{
+	white-space: wrap;
+	padding: 12px 20px;
+}
+.table-dashboard .table-cell:nth-child(2){
+	padding: 12px 0;
+}
+
+
+.table-dashboard .table-cell_price,
+.table-dashboard .table-cell_amount{
+	width: 35%;
+}
+
+
+.dashboard-table-footer{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	row-gap: 16px;
+
+	margin-top: 28px;
+}
+.dashboard-table-total{
+	margin-left: 16px;
+
+	font-size: 16px;
+	line-height: 20px;
+
+	color: var(--white50);
+}
+.dashboard-table-total__val{
+	color: var(--white50);
+}
+
+
+.vendor-dashboard{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-flow: row;
+	gap: 20px;
+
+	height: 100%;
+}
+.vendor-dashboard__select{
+	margin-bottom: 7px;
+}
+
+
+
+.pending-orders-list{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 16px;
+
+	padding: 10px 22px;
+	
+	border-radius: 14px;
+	background: var(--bg_block2);
+}
+.pending-orders-list-item{
+	font-size: 16px;
+	line-height: 24px;
+
+	color: var(--white85);
+}
+.pending-orders-list-item .active{
+	font-weight: 500;
+	color: var(--active);
+}
+
+.pending-orders-pagenator{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.available-robux.ml-modal{
+	width: 900px;
+	padding: 42px 32px 52px 32px;
+}
+
+
+
+
+@media (max-width: 1566px) {
+	.available-robux.ml-modal{
+		padding: 42px 32px 52px 32px;
+	}
+	.dashboard-table-wrap{
+		width: 100%;
+
+		padding-bottom:8px;
+	}
+}
+
+
+
+
+
+@media (max-width: 1199px) {
+	.table.table-dashboard{
+		margin: 20px 0 0;
+	}
+	.table-dashboard .table-cell.table-cell_amount{
+		white-space: wrap;
+	}
+
+	.dashboard-table-wrap{
+		width: 100%;
+	
+		padding: 20px 0 8px;
+	}
+	.dashboard-table-footer{
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.dashboard-table-total{
+		width: 100%;
+
+		margin: 0;
+
+		font-size: 14px;
+		line-height: 16px;
+
+		text-align: center;
+	}
+
+	.vendor-dashboard{
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+	.vendor-dashboard__select{
+		margin-bottom: 4px;
+	}
+
+
+	.pending-orders-list{
+		padding: 10px;
+	}
+	.pending-orders-list-item{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+
+	.available-robux.ml-modal{
+		width: 100%;
+	}
+}
+
+
+
+
+@media (max-width: 767px) {
+	.available-robux .ml__title{
+		padding: 0 32px;
+	}
+
+	.available-robux.ml-modal{
+		padding: 32px 10px 42px;
+	}
+}

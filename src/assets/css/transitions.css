@@ -1,0 +1,89 @@
+/******************************************************************************
+	Transitions
+******************************************************************************/
+.fade-enter-active,
+.fade-leave-active{
+	will-change: opacity;
+	transition: opacity var(--anim_time) var(--anim_func);
+}
+.fade-enter-from,
+.fade-leave-to{
+	opacity: 0;
+}
+
+.router-enter-active,
+.router-leave-active{
+	will-change: opacity;
+	transition: opacity var(--anim_router_time) var(--anim_func);
+}
+.router-enter-from,
+.router-leave-to{
+	opacity: 0;
+}
+
+
+.table-enter-active,
+.table-leave-active{
+	transform-origin: 0 0;
+	transition: all var(--anim_time) var(--anim_func);
+}
+.table-enter-from,
+.table-leave-to{
+	transform: scaleY(0);
+}
+
+
+.scalex-enter-active,
+.scalex-leave-active{
+	will-change: transform;
+	transition: transform var(--anim_time) var(--anim_func);
+}
+.scalex-enter-from,
+.scalex-leave-to{
+	transform: scaleX(0);
+}
+
+.scaley-enter-active,
+.scaley-leave-active{
+	will-change: transform;
+	transition: transform var(--anim_time) var(--anim_func);
+	transform-origin: 0 0;
+}
+.scaley-enter-from,
+.scaley-leave-to{
+	transform: scaleY(0);
+}
+
+
+.translatey-enter-active,
+.translatey-leave-active{
+	will-change: transform;
+	transition: transform var(--anim_time) var(--anim_func);
+}
+.translatey-enter-from,
+.translatey-leave-to{
+	transform: translateY(100%);
+}
+
+.translatex-enter-active,
+.translatex-leave-active{
+	will-change: transform;
+	transition: transform var(--anim_time) var(--anim_func);
+}
+.translatex-enter-from,
+.translatex-leave-to{
+	transform: translateX(-100%);
+}
+
+
+.fadescalex-enter-active,
+.fadescalex-leave-active{
+	will-change: opacity, transform;
+	transition: all var(--anim_time) var(--anim_func);
+}
+
+.fadescalex-enter-from,
+.fadescalex-leave-to{
+	opacity: 0;
+	transform: scaleX(0);
+}

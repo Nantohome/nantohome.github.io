@@ -1,0 +1,119 @@
+/******************************************************************************
+	Header for dashboard
+******************************************************************************/
+.header{
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 58px;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 var(--padding-side);
+	background: var(--bg);
+	border-top: none;
+	border-bottom: 1px solid var(--border_color);
+
+	z-index: 300;
+}
+
+.header-logo{
+	flex: 0 0 auto;
+	
+	display: block;
+
+	padding: 4px;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+}
+.header-logo__icon{
+	width: 24px;
+	height: 26px;
+}
+
+
+
+
+.header-burgerwrap{
+	position: relative;
+	
+	width: 24px;
+	height: 24px;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+}
+.header-burger{
+	position: absolute;
+	
+	width: 24px;
+	height: 18px;
+	top: 3px;
+	left: 0;
+
+	pointer-events: none;
+}
+.header-burger > span{
+	position: absolute;
+	
+	width: 24px;
+	height: 2px;
+	left: 0;
+	
+	background: #fff;
+	border-radius: 2px;
+
+	will-change: transform, opacity;
+	transition: all var(--anim_func) var(--anim_time);
+}
+
+
+.header-burger > span:nth-child(1){
+	top: 0;
+}
+.header-burger > span:nth-child(2){
+	top: 8px;
+}
+.header-burger > span:nth-child(3){
+	top: 16px;
+}
+
+.header-burger.js-open > span:nth-child(1){
+	transform: translateY(8px) rotate(45deg);
+}
+.header-burger.js-open > span:nth-child(2){
+	opacity: 0;
+}
+.header-burger.js-open > span:nth-child(3){
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+.header-burger__notice{
+	position: absolute;
+
+	top: -1px;
+	right: -4px;
+	width: 8px;
+	height: 8px;
+
+	border-radius: 50%;
+	background: #E63434;
+
+	transform: scale(0);
+
+	will-change: transform;
+	transition: transform var(--anim_func) var(--anim_time);
+}
+.header-burger__notice.js-show{
+	transform: scale(1.0);
+}
