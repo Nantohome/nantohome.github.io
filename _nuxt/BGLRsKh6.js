@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as s,a5 as a}from"./BgiJe7iG.js";const n={},c={class:"login-layout layout bg-gradient"};function r(e,l){return t(),s("div",c,[a(e.$slots,"default")])}const d=o(n,[["render",r]]);export{d as default};
